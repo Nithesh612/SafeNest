@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #f7931e;
+      }
+
+      .cls-4 {
+        fill: #009245;
+      }
+
+      .cls-5 {
+        fill: #f0f0f0;
+      }
+
+      .cls-6 {
+        fill: #0071bc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11727" data-name="Rectangle 11727" class="cls-1" width="16" height="16" transform="translate(988 28)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_india" class="cls-2" transform="translate(-988 -28)">
+    <g id="india_1_" data-name="india (1)" transform="translate(988 28)">
+      <circle id="Ellipse_163" data-name="Ellipse 163" class="cls-3" cx="8" cy="8" r="8"/>
+      <path id="Path_17760" data-name="Path 17760" class="cls-4" d="M16,8A8,8,0,0,1,0,8Z"/>
+      <path id="Path_17761" data-name="Path 17761" class="cls-5" d="M16,8a7.6,7.6,0,0,0-.48-2.667H.48a7.647,7.647,0,0,0,0,5.333H15.573A9,9,0,0,0,16,8Z"/>
+      <g id="Group_20063" data-name="Group 20063">
+        <path id="Path_17762" data-name="Path 17762" class="cls-6" d="M8,5.867A2.133,2.133,0,1,0,10.133,8,2.14,2.14,0,0,0,8,5.867ZM8,9.6A1.6,1.6,0,1,1,9.6,8,1.571,1.571,0,0,1,8,9.6Z"/>
+        <circle id="Ellipse_164" data-name="Ellipse 164" class="cls-6" cx="1.067" cy="1.067" r="1.067" transform="translate(6.933 6.933)"/>
+      </g>
+    </g>
+  </g>
+</svg>

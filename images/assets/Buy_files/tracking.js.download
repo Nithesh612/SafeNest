@@ -1,0 +1,132 @@
+
+            (function () {
+                var crm = {};   
+                crm.formdata = {};
+                crm.crm_url = "https://crmapi.techjockey.com";
+                crm.guuid = "80827bf7-658f-5306-9bc4-a1c7fc8860c0";
+                crm.server = {"REDIRECT_STATUS":"200","HTTP_X_FORWARDED_PROTO":"https","HTTP_X_FORWARDED_PORT":"443","HTTP_HOST":"www.techjockey.com","HTTP_X_AMZN_TRACE_ID":"Root=1-69bb83f3-1b4eb9946b8f23d9335bc6a6","HTTP_ACCEPT_ENCODING":"gzip, deflate, br, zstd","HTTP_SEC_FETCH_DEST":"empty","HTTP_SEC_FETCH_STORAGE_ACCESS":"active","HTTP_SEC_FETCH_MODE":"navigate","HTTP_USER_AGENT":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36","HTTP_VIA":"2.0 39822233cebedff08fa65fb77a756de4.cloudfront.net (CloudFront)","HTTP_COOKIE":"AWSALBCORS=PS5tLgvzTwWPm\/01HRPHPIU6ZuVyjgW7lCs7izipcGqyvrLWCYtLBbKhx9Q8mhAa1OO4vmvnxwh04lT1CEd8Jp+krMF\/zHwkdgV6x6AYC4q\/YRRdoKd98zvNYH0U; ci_session=4f2aa50e6bc97e95069bdbf28aa07b4e6642e03c; is_logged_in=0; moe_uuid=112b6352-91d5-4eee-bee8-f15cb7090ab0; tj_crm_acquisition_origin=google; tj_crm_acquisition_source=organic; tj_crm_guest_user_id=80827bf7-658f-5306-9bc4-a1c7fc8860c0; tj_crm_refUrl_cookie=https%3A%2F%2Fwww.techjockey.com%2F%3Fsrsltid%3DAfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD","HTTP_X_AMZ_CF_ID":"PWeOy21Z61zOANfFyTWFlyVm9IRi5gmutCXvu6HruGPvyJTwD9J9vQ==","HTTP_PRIORITY":"i","HTTP_SEC_FETCH_SITE":"none","HTTP_ACCEPT_LANGUAGE":"en-US,en;q=0.9","HTTP_REFERER":"https:\/\/www.techjockey.com\/?srsltid=AfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD","PATH":"\/usr\/local\/sbin:\/usr\/local\/bin:\/usr\/sbin:\/usr\/bin:\/sbin:\/bin","SERVER_SIGNATURE":"<address>Apache\/2.4.25 (Debian) Server at www.techjockey.com Port 80<\/address>\n","SERVER_SOFTWARE":"Apache\/2.4.25 (Debian)","SERVER_NAME":"www.techjockey.com","SERVER_ADDR":"172.19.0.2","SERVER_PORT":"80","REMOTE_ADDR":"2401:4900:cad7:927a:2d58:7faa:45d3:a366","DOCUMENT_ROOT":"\/var\/www\/html\/","REQUEST_SCHEME":"http","CONTEXT_PREFIX":"","CONTEXT_DOCUMENT_ROOT":"\/var\/www\/html\/","SERVER_ADMIN":"webmaster@localhost","SCRIPT_FILENAME":"\/var\/www\/html\/index.php","REMOTE_PORT":"35398","REDIRECT_URL":"\/crm\/tracking.js","REDIRECT_QUERY_STRING":"\/crm\/tracking.js&c=https%3A%2F%2Fwww.techjockey.com%2F%3Fsrsltid%3DAfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD&r=https%3A%2F%2Fwww.google.com%2F","GATEWAY_INTERFACE":"CGI\/1.1","SERVER_PROTOCOL":"HTTP\/1.1","REQUEST_METHOD":"GET","QUERY_STRING":"c=https%3A%2F%2Fwww.techjockey.com%2F%3Fsrsltid%3DAfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD&r=https%3A%2F%2Fwww.google.com%2F","REQUEST_URI":"\/crm\/tracking.js?c=https%3A%2F%2Fwww.techjockey.com%2F%3Fsrsltid%3DAfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD&r=https%3A%2F%2Fwww.google.com%2F","SCRIPT_NAME":"\/index.php","PHP_SELF":"\/index.php","REQUEST_TIME_FLOAT":1773896691.906,"REQUEST_TIME":1773896691,"argv":["\/crm\/tracking.js&c=https%3A%2F%2Fwww.techjockey.com%2F%3Fsrsltid%3DAfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD&r=https%3A%2F%2Fwww.google.com%2F"],"argc":1};
+                crm.page_url = "https://www.techjockey.com/?srsltid=AfmBOoq1UIOXE0aWHl48wk-SqQhi-j2bsrlQqDko0bjvn2wTkhalezmD";
+                crm.referal_url = "https://www.google.com/";
+                crm.customer_id = "NULL";
+                crm.customer_info = [];
+                crm.acquisition_source = "organic";
+                crm.acquisition_origin = "google";
+                crm.utm_params = [];
+                crm.gclid = "";
+                crm.feed_action = "page_view";
+                crm.app_source = "website";
+                crm.category_name = (typeof crmVariables !== 'undefined') ? crmVariables.category_name : null;
+                crm.category_id = (typeof crmVariables !== 'undefined') ? crmVariables.category_id : null;
+                crm.product_name = (typeof crmVariables !== 'undefined') ? crmVariables.product_name : null;
+                crm.product_id = (typeof crmVariables !== 'undefined') ? crmVariables.product_id : null;
+                crm.page_type = (typeof crmVariables !== 'undefined') ? crmVariables.page_type : null;
+                crm.invokingfunc = function (crm) {
+                    var requestOptions = {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json, text/plain, */*',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            guuid: crm.guuid,
+                            customer_id: crm.customer_id,
+                            page_url: crm.page_url,
+                            referal_url: crm.referal_url,
+                            acquisition_source: crm.acquisition_source,
+                            acquisition_origin : crm.acquisition_origin,
+                            utm_params: crm.utm_params,
+                            gclid : crm.gclid,
+                            server_data: crm.server,
+                            formdata: crm.formdata,
+                            feed_action: crm.feed_action,
+                            app_source: crm.app_source,
+                            customer_info:crm.customer_info,
+                            page_info : {
+                                category_name : crm.category_name,
+                                category_id : crm.category_id,
+                                product_name : crm.product_name,
+                                product_id : crm.product_id,
+                                page_type : crm.page_type
+                            }
+                            
+                        })
+                    };
+
+                    fetch(crm.crm_url + "/userdata", requestOptions)
+                            .then(response => response.json())
+                            .then(result => {
+                                console.log(result);
+                            })
+                            .catch(error => console.log('error', error));
+                };
+                
+                crm.invokingfunc(crm);
+
+                var startCapturingForms = (e) => {
+                    /* Capturing forms details*/
+                    crm.formdata = {};
+                    let hasDataFlag = false;
+                    let targetHasForm = e.target.form || null;
+                    if (targetHasForm) {
+                        let form = e.target.form;
+                        crm.formdata['form_id'] = form.id;
+                        crm.formdata['form_name'] = form.name;
+                        Array.from(form.elements).forEach(function (element) {
+                            /*Capturing field other than password type for user data security reason*/
+                            if (element.type !== "password") {
+                                let inputEl = element.name;
+                                if (!inputEl) {
+                                    inputEl = element.id;
+                                }
+                                if (inputEl !== "") {
+                                    if (element.value !== "") {
+                                        hasDataFlag = true;
+                                        /*Handling for input with Dial code*/
+                                        let classList = element.className && element.className.split(/\s+/) || [];
+                                        for (var i = 0; i < classList.length; i++) {
+                                            if (classList[i] === 'intlNumber') {
+                                                let intlChildNodes = element.previousSibling.firstChild.childNodes;
+                                                for (var i = 0; i < intlChildNodes.length; i++) {
+                                                    if (intlChildNodes[i].className == "iti__selected-dial-code") {
+                                                        let dial_code = intlChildNodes[i].textContent;
+                                                        crm.formdata['dial_code'] = dial_code;
+                                                        break;
+                                                    }
+                                                }
+                                                break;
+                                            }
+                                        }
+                                        /*End*/
+                                        crm.formdata[inputEl] = element.value;
+                                    }
+                                }
+                            }
+                            /*End*/
+                        });
+                        if (hasDataFlag) {
+                            crm.feed_action = "form_submit";
+                            crm.invokingfunc(crm);
+                        }
+                    }
+                    /*End*/
+                };
+
+                document.addEventListener('click', function (e) {
+                    if (e.target.matches('[type="button"]') ||
+                            e.target.matches('[type="submit"]')) {
+                        startCapturingForms(e);
+                    }
+                }, false);
+
+                /*Below code is used send post API data */
+                const noSearchButton = document.querySelector("#no_search_button");
+                if (noSearchButton) {
+                    noSearchButton.addEventListener("click", function(ev) {
+                        crm.formdata = {};
+                        crm.formdata['form_id'] = 'no_search_products';
+                        crm.formdata['name'] = 'no_search_products';
+                        crm.formdata['keyword'] = document.getElementById('no_products').value;
+                        crm.invokingfunc(crm);
+                    });
+                }
+            })();

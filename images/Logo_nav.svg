@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <rect width="32" height="32" rx="8" fill="#00C896" y="4"/>
+  <path d="M8 26L16 14l8 12" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="14" r="2" fill="#0A1628"/>
+  <text x="42" y="27" font-family="'Inter', -apple-system, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Safe<tspan fill="#00C896">Nest</tspan></text>
+</svg>

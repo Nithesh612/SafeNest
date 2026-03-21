@@ -1,0 +1,6 @@
+var tj=tj||{};tj.api=tj.api||{};tj.baseUrl=tj.baseUrl||(function(){var s=location.pathname.split('/');if('localhost'==location.host){var e=location.origin+'/'+s[1].trim('/')+'/'}else if('localhost:3000'==location.host){var e=location.origin+'/'}else{var e=location.origin+'/'}
+return e})();tj.api.AjaxRequest=function(type,url,onSuccess,onError,onComplete,data){var req={};req.type=type;req.url=url;if(data)
+req.data=toJSON(data);req.success=onSuccess;req.error=onError;req.complete=onComplete;req.dataType="json";req.crossDomain=!0,req.accepts={json:"application/json"};req.contentType="application/json; charset=utf-8";req.processData=!1;$.ajax(req)};function toJSON(obj){return JSON.stringify(obj,null,2)}
+function onError(error){console.log(error)}
+function onComplete(){}
+tj.api.formData=function(form){var data=$(form).serializeArray().reduce(function(obj,item){obj[item.name]=item.value;return obj},{});return data}

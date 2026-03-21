@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Software Products – SafeNest</title>
+  <meta name="description" content="Browse 20,000+ business software products. Filter by category, price, rating, and vendor."/>
+  
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="cmp-nav">
+  <div class="cmp-nav-shell">
+    <a class="cmp-nav-logo" href="index.html" aria-label="SafeNest Home">
+      <img src="images/Logo_nav.svg" alt="SafeNest"/>
+    </a>
+    <div class="cmp-nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Category</a>
+      <a href="compare.html">Compare</a>
+      <a href="index.html#experts">Ask Question</a>
+    </div>
+    <div class="cmp-nav-actions">
+      <div class="cmp-nav-search">
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="#6b7280" aria-hidden="true">
+          <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+        </svg>
+        <input type="text" placeholder="Search software..." aria-label="Search software"/>
+      </div>
+      <a href="pricing.html" aria-label="Cart" style="color: #fff; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.2s; margin-right: 12px;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </a>
+      <button class="cmp-nav-signup" type="button">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+<!-- TRUSTED SECTION -->
+<section class="prod-trusted">
+  <div class="container">
+    <h1 class="prod-trusted-title">Trusted by 20+ million customers around the world.</h1>
+    <div class="prod-trusted-content">
+      <article class="prod-testimonial-card">
+        <div class="prod-testimonial-copy">
+          <img class="prod-testimonial-logo" src="images/assets/Buy_files/ts5.svg" alt="Microsoft">
+          <p class="prod-testimonial-headline">Microsoft rollout was smooth, all thanks to SafeNest.</p>
+          <p class="prod-testimonial-subline">SafeNest guided us to the right Microsoft plan and ensured quick delivery at the best price.</p>
+          <p class="prod-testimonial-author">Anoop Kumar - VP Business</p>
+        </div>
+        <img class="prod-testimonial-person" src="images/assets/Buy_files/5.webp" alt="Anoop Kumar">
+      </article>
+
+      <div class="prod-brand-grid">
+        <div class="prod-brand-box">
+          <img src="images/assets/Buy_files/salesforce.svg" alt="Salesforce">
+        </div>
+        <div class="prod-brand-box">
+          <img src="images/assets/Buy_files/ts6.png" alt="Aruba">
+        </div>
+        <div class="prod-brand-box">
+          <img src="images/assets/Buy_files/ts3.svg" alt="Quick Heal">
+        </div>
+        <div class="prod-brand-box">
+          <img src="images/assets/Buy_files/ts5.svg" alt="Microsoft">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTING HERO -->
+<section class="listing-hero">
+  <div class="container">
+    <span class="section-tag">All Products</span>
+    <h1>Business Software Marketplace</h1>
+    <p>20,000+ software products · Compare & buy at the best price</p>
+    <form class="lh-search" onsubmit="return false;">
+      <svg width="17" height="17" viewBox="0 0 20 20" fill="#94A3B8"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+      <input type="text" placeholder="Search CRM, ERP, Accounting…"/>
+      <button class="btn btn-primary" style="border-radius:999px;padding:9px 20px;">Search</button>
+    </form>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div style="background:#fff;border-bottom:1px solid #E2E8F0;">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">&rsaquo;</span>
+      <span>All Software</span>
+    </div>
+  </div>
+</div>
+
+<!-- LISTING MAIN -->
+<div class="listing-main">
+  <div class="container">
+    <div class="active-filters">
+      <span class="filter-chip">Cyber Security <span class="rm">&times;</span></span>
+      <span class="filter-chip">Under &#8377;5,000 <span class="rm">&times;</span></span>
+      <span class="filter-chip">Rating 4+ <span class="rm">&times;</span></span>
+    </div>
+
+    <div class="layout-sidebar">
+      <aside class="sidebar">
+        <div class="filter-box">
+          <h4>Category <span class="filter-clear">Clear</span></h4>
+          <label class="filter-option"><input type="checkbox" checked/> Cyber Security (1,240)</label>
+          <label class="filter-option"><input type="checkbox"/> Accounting (890)</label>
+          <label class="filter-option"><input type="checkbox"/> CRM (640)</label>
+          <label class="filter-option"><input type="checkbox"/> HR &amp; Payroll (520)</label>
+          <label class="filter-option"><input type="checkbox"/> ERP (430)</label>
+          <label class="filter-option"><input type="checkbox"/> GST &amp; Billing (380)</label>
+          <label class="filter-option"><input type="checkbox"/> Inventory (290)</label>
+          <label class="filter-option"><input type="checkbox"/> Cloud Services (710)</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Price Range (&#8377;/year) <span class="filter-clear">Clear</span></h4>
+          <input type="range" min="0" max="50000" value="5000"/>
+          <div class="range-label"><span>&#8377;0</span><span>&#8377;5,000</span></div>
+          <div style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+            <label class="filter-option"><input type="checkbox" checked/> Under &#8377;1,000</label>
+            <label class="filter-option"><input type="checkbox"/> &#8377;1,000-&#8377;5,000</label>
+            <label class="filter-option"><input type="checkbox"/> &#8377;5,000-&#8377;20,000</label>
+            <label class="filter-option"><input type="checkbox"/> &#8377;20,000+</label>
+            <label class="filter-option"><input type="checkbox"/> Free / Open Source</label>
+          </div>
+        </div>
+
+        <div class="filter-box">
+          <h4>Rating <span class="filter-clear">Clear</span></h4>
+          <label class="filter-option"><input type="checkbox" checked/> &#9733;&#9733;&#9733;&#9733;&#9733; 5 Stars</label>
+          <label class="filter-option"><input type="checkbox"/> &#9733;&#9733;&#9733;&#9733; 4+ Stars</label>
+          <label class="filter-option"><input type="checkbox"/> &#9733;&#9733;&#9733; 3+ Stars</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Vendor <span class="filter-clear">Clear</span></h4>
+          <label class="filter-option"><input type="checkbox"/> Kaspersky</label>
+          <label class="filter-option"><input type="checkbox"/> Quick Heal</label>
+          <label class="filter-option"><input type="checkbox"/> Bitdefender</label>
+          <label class="filter-option"><input type="checkbox"/> Symantec / Norton</label>
+          <label class="filter-option"><input type="checkbox"/> McAfee</label>
+          <label class="filter-option"><input type="checkbox"/> ESET</label>
+        </div>
+
+        <div class="filter-box">
+          <h4>Deployment</h4>
+          <label class="filter-option"><input type="checkbox"/> Cloud / SaaS</label>
+          <label class="filter-option"><input type="checkbox"/> On-Premise</label>
+          <label class="filter-option"><input type="checkbox"/> Mobile App</label>
+          <label class="filter-option"><input type="checkbox"/> Desktop</label>
+        </div>
+      </aside>
+
+      <div>
+        <div class="sort-bar">
+          <p class="results">Showing <strong>1-12</strong> of <strong>1,240</strong> products</p>
+          <div class="sort-controls" style="display:flex;align-items:center;gap:10px;">
+            <label style="font-size:0.85rem;color:#64748B;">Sort by:</label>
+            <select class="sort-select">
+              <option>Most Popular</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Highest Rated</option>
+              <option>Newest First</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="prod-list-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;">
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/592_QuickHealAntiVirusPro.webp" alt="Quick Heal" style="max-height:140px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Quick Heal Antivirus Pro</a></h3>
+              <div class="vendor">Quick Heal Technologies</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.0 (1.2k)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;299</span><span class="orig">&#8377;979</span><span class="save">Save 69%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;position:relative;">
+            <span style="position:absolute;top:14px;left:14px;background:#EF4444;color:#fff;font-size:0.68rem;font-weight:700;padding:2px 8px;border-radius:4px;">Hot Deals</span>
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/4352_KasperskyAnti-Virus.webp" alt="Kaspersky" style="max-height:140px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Kaspersky Antivirus</a></h3>
+              <div class="vendor">Kaspersky Lab</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.2 (980)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;221</span><span class="orig">&#8377;480</span><span class="save">Save 54%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/29674_29674_K7UltimateSecurityInfiniti.webp" alt="K7" style="max-height:140px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">K7 Ultimate Security Infiniti</a></h3>
+              <div class="vendor">K7 Computing</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 (340)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;2,372</span><span class="orig">&#8377;13,999</span><span class="save">Save 83%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/2967_tallyprimelogo.webp" alt="Tally Prime" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Tally Prime</a></h3>
+              <div class="vendor">Tally Solutions</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.7 (3.4k)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;18,000</span><span class="orig">&#8377;22,500</span><span class="save">Save 20%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/10918_vyapar_logo.png" alt="Vyapar" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Vyapar Billing Software</a></h3>
+              <div class="vendor">Vyapar Technologies</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.6 (4.8k)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;1,799</span><span class="orig">&#8377;2,999</span><span class="save">Save 40%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/16569_16569_MyBillbook.png" alt="MyBillBook" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">MyBillBook</a></h3>
+              <div class="vendor">FloBiz Pvt. Ltd.</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.3 (2.6k)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;1,500</span><span class="orig">&#8377;2,500</span><span class="save">Save 40%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/2961_alignbooks.webp" alt="AlignBooks" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">AlignBooks</a></h3>
+              <div class="vendor">AlignBooks Technologies</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.2 (820)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;2,400</span><span class="orig">&#8377;3,600</span><span class="save">Save 33%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/2889_knowlarity-logo.webp" alt="Knowlarity" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Knowlarity Smart IVR</a></h3>
+              <div class="vendor">Knowlarity Communications</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.1 (610)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;1,999</span><span class="orig">&#8377;3,500</span><span class="save">Save 43%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card" style="text-align:center;">
+            <div style="background:#F8FAFC;border-radius:12px;padding:16px;margin-bottom:14px;min-height:160px;display:flex;align-items:center;justify-content:center;">
+              <img src="images/11217_Exotelproductlogo.webp" alt="Exotel" style="max-height:120px;max-width:100%;object-fit:contain;"/>
+            </div>
+            <div class="prod-card-body">
+              <h3><a href="product-detail.html">Exotel Cloud Telephony</a></h3>
+              <div class="vendor">Exotel Techcom Pvt. Ltd.</div>
+              <div class="rating"><span style="color:#F59E0B;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4.4 (730)</div>
+            </div>
+            <div class="prod-footer" style="margin-top:12px;">
+              <div class="prod-price"><span class="curr">&#8377;2,999</span><span class="orig">&#8377;4,500</span><span class="save">Save 33%</span></div>
+              <div class="prod-actions">
+                <a href="product-detail.html" class="btn btn-outline btn-sm">Details</a>
+                <a href="product-detail.html" class="btn btn-primary btn-sm">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <div class="page-btn">&#8249;</div>
+          <div class="page-btn active">1</div>
+          <div class="page-btn">2</div>
+          <div class="page-btn">3</div>
+          <div class="page-btn">4</div>
+          <div class="page-btn">5</div>
+          <div class="page-btn">...</div>
+          <div class="page-btn">104</div>
+          <div class="page-btn">&#8250;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Solution Finder Section -->
+    <section class="solution-finder">
+      <div class="finder-background"></div>
+      <div class="finder-content">
+        <div class="finder-card">
+          <h2 class="finder-title">
+            Looking for Designing<br>Solutions<br>
+            <span class="finder-title-highlight">that is:</span>
+          </h2>
+          
+          <div class="finder-options">
+            <div class="finder-row">
+              <button class="finder-option">AI Tools</button>
+              <button class="finder-option">Free</button>
+            </div>
+            <div class="finder-row">
+              <button class="finder-option">Cloud Based</button>
+              <button class="finder-option">For Windows</button>
+            </div>
+            <div class="finder-row">
+              <button class="finder-option">iPhone</button>
+              <button class="finder-option">For Android</button>
+            </div>
+            <div class="finder-row">
+              <button class="finder-option">For Mac</button>
+              <button class="finder-option">Small Business</button>
+            </div>
+            <button class="finder-option">For Startups</button>
+          </div>
+          
+          <button class="finder-submit">Find My Solution</button>
+        </div>
+        
+        <div class="categories-section">
+          <h2 class="categories-title">
+            Related <span class="categories-title-gradient">Categories</span>
+          </h2>
+          <div class="categories-line"></div>
+          
+          <div class="categories-chips">
+            <span class="category-chip">Photo Editing Software</span>
+            <span class="category-chip">ID & Photo Printing Software</span>
+            <span class="category-chip">Desktop Publishing Software</span>
+            <span class="category-chip">3D Design Software</span>
+            <span class="category-chip">Logo Designing Softwares</span>
+            <span class="category-chip">Vector Graphics Software</span>
+            <span class="category-chip">Flipbook Software</span>
+            <span class="category-chip">Website Design Software</span>
+            <span class="category-chip">Sketching Software</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- EXPERT GUIDANCE BANNER -->
+<div class="expert-banner">
+  <div class="container">
+    <div class="expert-inner">
+      <div>
+        <h3>Need Expert Guidance? We're Here to Help!</h3>
+        <p>Talk to our software experts and get personalised recommendations for your business.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="tel:+918080908090" class="btn btn-outline-white">+91 8080 908090</a>
+        <a href="index.html#experts" class="btn btn-primary">Ask an Expert</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.2rem;">
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#00C896" />
+              <path d="M8 22L16 10l8 12" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="16" cy="10" r="2" fill="#0A1628" />
+            </svg>
+            Safe<span>Nest</span>
+          </a>
+          <p>India's most trusted software marketplace. Discover, compare, and buy the best software for your business
+            needs.</p>
+          <div class="app-badges">
+            <a href="#" class="app-badge">📱 App Store</a>
+            <a href="#" class="app-badge">▶ Google Play</a>
+          </div>
+          <div class="footer-socials" style="margin-top:16px;">
+            <a href="#">in</a>
+            <a href="#">𝕏</a>
+            <a href="#">f</a>
+            <a href="#">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Software</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Deals &amp; Offers</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Free Software</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Buyer's Guide</a></li>
+            <li><a href="#">Software Reviews</a></li>
+            <li><a href="#">Comparisons</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p style="color:rgba(255,255,255,.4);">© 2025 SafeNest Pvt. Ltd. All rights reserved.</p>
+        <p style="color:rgba(255,255,255,.4);">Made with in India</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  (() => {
+    const STYLE_ID = "page-loader-style";
+    const OVERLAY_ID = "page-loader-overlay";
+    const NAV_STYLE_ID = "page-loader-nav-style";
+    const NAV_DELAY_MS = 720;
+    let isNavigating = false;
+
+    const addStyle = (id, css) => {
+      if (document.getElementById(id)) return;
+      const style = document.createElement("style");
+      style.id = id;
+      style.textContent = css;
+      document.head.appendChild(style);
+    };
+
+    const ensureStyles = () => {
+      addStyle(
+        STYLE_ID,
+        `.page-loader-active{overflow:hidden}.page-loader-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(4,7,12,.94);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility .25s ease;z-index:99999}.page-loader-overlay.is-visible{opacity:1;visibility:visible;pointer-events:auto}.page-loader-overlay .loader-wrapper{position:relative;display:flex;align-items:center;justify-content:center;gap:2px;min-height:120px;margin:0;font-family:'Poppins','Inter',sans-serif;font-size:1.6em;font-weight:600;user-select:none;color:#fff;transform:scale(1.5)}.page-loader-overlay .loader{position:absolute;inset:0;z-index:1;background-color:transparent;-webkit-mask:repeating-linear-gradient(90deg,transparent 0,transparent 6px,#000 7px,#000 8px);mask:repeating-linear-gradient(90deg,transparent 0,transparent 6px,#000 7px,#000 8px)}.page-loader-overlay .loader::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 50% 50%,rgb(200,255,0) 0,transparent 50%),radial-gradient(circle at 45% 45%,#f00 0,transparent 45%),radial-gradient(circle at 55% 55%,#0ff 0,transparent 45%),radial-gradient(circle at 45% 55%,#0f0 0,transparent 45%),radial-gradient(circle at 55% 45%,#00f 0,transparent 45%);-webkit-mask:radial-gradient(circle at 50% 50%,transparent 0,transparent 10%,#000 25%);mask:radial-gradient(circle at 50% 50%,transparent 0,transparent 10%,#000 25%);animation:page-loader-transform 2s infinite alternate,page-loader-opacity 4s infinite;animation-timing-function:cubic-bezier(.6,.8,.5,1)}.page-loader-overlay .loader-letter{display:inline-block;opacity:0;animation:page-loader-letter 4s infinite linear;z-index:2}.page-loader-overlay .loader-letter:nth-child(1){animation-delay:.10s}.page-loader-overlay .loader-letter:nth-child(2){animation-delay:.205s}.page-loader-overlay .loader-letter:nth-child(3){animation-delay:.31s}.page-loader-overlay .loader-letter:nth-child(4){animation-delay:.415s}.page-loader-overlay .loader-letter:nth-child(5){animation-delay:.521s}.page-loader-overlay .loader-letter:nth-child(6){animation-delay:.626s}.page-loader-overlay .loader-letter:nth-child(7){animation-delay:.731s}@keyframes page-loader-transform{0%{transform:translateX(-55%)}100%{transform:translateX(55%)}}@keyframes page-loader-opacity{0%,100%{opacity:0}15%{opacity:1}65%{opacity:0}}@keyframes page-loader-letter{0%{opacity:0}5%{opacity:1;text-shadow:0 0 4px #000;transform:scale(1.1) translateY(-2px)}20%{opacity:.2}100%{opacity:0}}@media (max-width:640px){.page-loader-overlay .loader-wrapper{transform:scale(1.05);font-size:1.35em}}`
+      );
+    };
+
+    const ensureOverlay = () => {
+      let overlay = document.getElementById(OVERLAY_ID);
+      if (overlay) return overlay;
+
+      overlay = document.createElement("div");
+      overlay.id = OVERLAY_ID;
+      overlay.className = "page-loader-overlay";
+      overlay.setAttribute("aria-hidden", "true");
+      overlay.innerHTML =
+        '<div class="loader-wrapper"><span class="loader-letter">L</span><span class="loader-letter">O</span><span class="loader-letter">A</span><span class="loader-letter">D</span><span class="loader-letter">I</span><span class="loader-letter">N</span><span class="loader-letter">G</span><div class="loader"></div></div>';
+      document.body.appendChild(overlay);
+      return overlay;
+    };
+
+    const ensureNavStyles = () => {
+      addStyle(
+        NAV_STYLE_ID,
+        `.cmp-nav-toggle{display:none;width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:#0d1825;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.18);flex:0 0 auto}.cmp-nav-toggle span{display:block;width:18px;height:2px;background:currentColor;border-radius:999px;transition:transform .2s ease,opacity .2s ease}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(2){opacity:0}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){.cmp-nav{padding:14px 16px !important;min-height:auto !important;align-items:center !important;gap:12px !important}.cmp-nav-shell{width:100% !important;min-height:auto !important;padding:0 !important}.cmp-nav,.cmp-nav-shell{display:flex !important;flex-wrap:wrap !important;align-items:center !important;justify-content:space-between !important;row-gap:12px !important}.cmp-nav-logo{margin-right:auto !important}.cmp-nav-toggle{display:inline-flex !important}.cmp-nav .cmp-nav-links,.cmp-nav .cmp-nav-actions{display:none !important;width:100% !important;flex:0 0 100% !important;margin-left:0 !important}.cmp-nav.cmp-nav-open,.cmp-nav.cmp-nav-open .cmp-nav-shell,.cmp-nav.cmp-nav-open .cmp-nav-links,.cmp-nav.cmp-nav-open .cmp-nav-actions{background:#000 !important}.cmp-nav.cmp-nav-open .cmp-nav-links{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:8px !important;padding-top:8px !important}.cmp-nav.cmp-nav-open .cmp-nav-links a{display:block !important;width:100% !important;padding:12px 14px !important;border-radius:12px !important;background:rgba(255,255,255,.04) !important}.cmp-nav.cmp-nav-open .cmp-nav-actions{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:12px !important;padding-bottom:4px !important}.cmp-nav.cmp-nav-open .cmp-nav-search{display:flex !important;width:100% !important;max-width:none !important;min-width:0 !important;height:48px !important}.cmp-nav.cmp-nav-open .cmp-nav-actions>a{margin-right:0 !important;align-self:flex-start !important}.cmp-nav.cmp-nav-open .cmp-nav-signup{width:100% !important;min-width:0 !important}}@media (max-width:560px){.cmp-nav{padding:12px 14px !important}.cmp-nav-logo img{height:34px !important}}`
+      );
+    };
+
+    const setNavOpenState = (nav, toggle, isOpen) => {
+      nav.classList.toggle("cmp-nav-open", isOpen);
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    };
+
+    const setupMobileNav = () => {
+      ensureNavStyles();
+
+      document.querySelectorAll(".cmp-nav").forEach((nav, index) => {
+        if (nav.dataset.mobileNavReady === "true") return;
+
+        const navShell = nav.querySelector(".cmp-nav-shell");
+        const toggleHost = navShell || nav;
+        const links = toggleHost.querySelector(".cmp-nav-links");
+        const actions = toggleHost.querySelector(".cmp-nav-actions");
+        if (!links || !actions) return;
+
+        const toggle = document.createElement("button");
+        toggle.type = "button";
+        toggle.className = "cmp-nav-toggle";
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation menu");
+        toggle.setAttribute("aria-controls", `cmp-mobile-nav-${index}`);
+        toggle.innerHTML = "<span></span><span></span><span></span>";
+
+        links.id = `cmp-mobile-nav-${index}`;
+        toggleHost.insertBefore(toggle, links);
+
+        toggle.addEventListener("click", () => {
+          setNavOpenState(nav, toggle, !nav.classList.contains("cmp-nav-open"));
+        });
+
+        const closeOnLink = (event) => {
+          if (event.target.closest("a[href]")) setNavOpenState(nav, toggle, false);
+        };
+
+        links.addEventListener("click", closeOnLink);
+        actions.addEventListener("click", closeOnLink);
+
+        document.addEventListener("click", (event) => {
+          if (!nav.contains(event.target)) setNavOpenState(nav, toggle, false);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setNavOpenState(nav, toggle, false);
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 900) setNavOpenState(nav, toggle, false);
+        });
+
+        nav.dataset.mobileNavReady = "true";
+      });
+    };
+
+    const ensureLoader = () => {
+      ensureStyles();
+      return ensureOverlay();
+    };
+
+    const resetLoader = () => {
+      const overlay = document.getElementById(OVERLAY_ID);
+      isNavigating = false;
+      document.body.classList.remove("page-loader-active");
+      if (overlay) overlay.classList.remove("is-visible");
+    };
+
+    const showLoader = (nextHref) => {
+      const overlay = ensureLoader();
+      if (isNavigating) return;
+
+      isNavigating = true;
+      document.body.classList.add("page-loader-active");
+      overlay.classList.add("is-visible");
+
+      if (nextHref) {
+        window.setTimeout(() => {
+          window.location.href = nextHref;
+        }, NAV_DELAY_MS);
+      }
+    };
+
+    const isModifiedClick = (event) =>
+      event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+
+    const isSameDocument = (url) =>
+      url.pathname === window.location.pathname && url.search === window.location.search;
+
+    const resolveInternalHref = (rawHref) => {
+      if (!rawHref) return null;
+      const trimmedHref = rawHref.trim();
+      if (!trimmedHref || trimmedHref === "#" || trimmedHref.startsWith("javascript:")) return null;
+      if (trimmedHref.startsWith("mailto:") || trimmedHref.startsWith("tel:")) return null;
+
+      const url = new URL(trimmedHref, window.location.href);
+      return url.origin === window.location.origin ? url : null;
+    };
+
+    const handleInlineLocationClick = (event) => {
+      const trigger = event.target.closest("[onclick*='location.href'], [onclick*='window.location.href']");
+      if (!trigger || trigger.closest("a[href]")) return false;
+
+      const onclickValue = trigger.getAttribute("onclick");
+      const match = onclickValue && onclickValue.match(/(?:window\.)?location\.href\s*=\s*['"]([^'"]+)['"]/);
+      if (!match) return false;
+
+      const url = resolveInternalHref(match[1]);
+      if (!url || isSameDocument(url)) return false;
+
+      event.preventDefault();
+      event.stopPropagation();
+      if (typeof event.stopImmediatePropagation === "function") event.stopImmediatePropagation();
+      showLoader(url.href);
+      return true;
+    };
+
+    const handleAnchorClick = (event) => {
+      const anchor = event.target.closest("a[href]");
+      if (!anchor) return;
+      if (anchor.target && anchor.target !== "_self") return;
+      if (anchor.hasAttribute("download") || anchor.dataset.noLoader !== undefined) return;
+      if (isModifiedClick(event)) return;
+
+      const url = resolveInternalHref(anchor.getAttribute("href"));
+      if (!url || isSameDocument(url)) return;
+
+      event.preventDefault();
+      showLoader(url.href);
+    };
+
+    const bindEvents = () => {
+      document.addEventListener(
+        "click",
+        (event) => {
+          if (handleInlineLocationClick(event)) return;
+          handleAnchorClick(event);
+        },
+        true
+      );
+      window.addEventListener("pageshow", resetLoader);
+      window.addEventListener("load", resetLoader);
+    };
+
+    const init = () => {
+      ensureLoader();
+      setupMobileNav();
+      resetLoader();
+      bindEvents();
+      window.showPageLoader = showLoader;
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
