@@ -2414,7 +2414,6 @@ body {
       margin: 54px auto 24px;
       max-width: calc(100% - 192px);
     }
-<<<<<<< HEAD
     .cmp-trending-header {
       width: min(100%, 1128px);
       margin: 0 auto 48px;
@@ -2428,12 +2427,6 @@ body {
       margin: 0 auto;
       gap: 24px;
     }
-=======
-    .cmp-trending-header { margin-bottom: 48px; }
-    .cmp-trending-header h2 { font-size: 1.875rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
-    .cmp-trending-header p { font-size: 1rem; color: #fff; opacity: .85; }
-    .cmp-trending-grid { display: grid; grid-template-columns: repeat(3, 360px); gap: 0 24px; }
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
     .cmp-trend-card {
       background: #fff; border-radius: 24px;
       border: 1px solid #f1f5f9;
@@ -2513,16 +2506,10 @@ body {
 
     /* ── QUESTIONS BANNER ── */
     .cmp-qbanner {
-<<<<<<< HEAD
       background: #d2eed0;
       margin: 0 0 64px;
       border-radius: 0;
       padding: 40px clamp(16px, 4vw, 40px);
-=======
-      background: #d2eed0; border-radius: 15px;
-      margin: 0 58px 64px;
-      padding: 40px 36px;
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
       display: flex; align-items: center; justify-content: space-between;
       flex-wrap: wrap; gap: 16px;
     }
@@ -2535,26 +2522,18 @@ body {
     /* ── FOOTER same as other pages ── */
     .footer {
       background: #000;
-<<<<<<< HEAD
       padding: 48px 0 0;
     }
     .footer > .container {
       max-width: none;
       width: 100%;
       padding: 0;
-=======
-      padding: 48px 40px 0;
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
     }
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
       gap: 40px;
-<<<<<<< HEAD
       padding: 0 clamp(16px, 4vw, 40px) 48px;
-=======
-      padding-bottom: 48px;
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
     .footer-brand p { font-size: 0.875rem; color: rgba(255,255,255,.5); margin-top: 16px; line-height: 1.7; }
@@ -2563,7 +2542,6 @@ body {
     .footer-col ul li a { font-size: 0.875rem; color: rgba(255,255,255,.65); }
     .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 800; color: #fff; }
     .nav-logo span { color: #00C896; }
-<<<<<<< HEAD
     .footer > .container .footer-bottom {
       display: flex;
       justify-content: space-between;
@@ -2573,9 +2551,6 @@ body {
       background: transparent;
       border-top: none;
     }
-=======
-    .footer-bottom { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; gap: 8px; }
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
 
     /* Subscribe form in footer */
     .footer-subscribe-title { font-size: 1rem; font-weight: 700; color: #fff; letter-spacing: -0.5px; margin-bottom: 14px; }
@@ -2738,11 +2713,7 @@ body {
       .cmp-add-actions {
         margin-top: 22px;
       }
-<<<<<<< HEAD
       .cmp-qbanner { margin: 0 0 48px; }
-=======
-      .cmp-qbanner { margin: 0 16px 48px; }
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
       .footer-grid { grid-template-columns: 1fr; }
     }
 
@@ -6313,7 +6284,6 @@ body {
   max-width: 1120px;
 }
 
-<<<<<<< HEAD
 .home-section-title {
   position: relative;
   display: inline-block;
@@ -6405,8 +6375,6 @@ body {
   }
 }
 
-=======
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
 .cmp-search-title {
   max-width: none;
   font-size: clamp(2.05rem, 3vw, 3.05rem) !important;
@@ -6778,13 +6746,10 @@ body {
     grid-template-columns: 1fr !important;
   }
 
-<<<<<<< HEAD
   .home-section-title::after {
     width: 34%;
   }
 
-=======
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
   .home-categories-header .btn,
   .expert-cta-actions .btn,
   .prod-actions .btn {
@@ -6801,7 +6766,6 @@ body {
     font-size: clamp(1.7rem, 9vw, 2.2rem) !important;
   }
 }
-<<<<<<< HEAD
 
 /* Homepage premium revamp */
 .software-marquee-section {
@@ -6909,10 +6873,6 @@ body {
 
 .software-marquee-track--right {
   animation: safeMarqueeRight 38s linear infinite;
-}
-
-.software-marquee-shell:hover .software-marquee-track {
-  animation-play-state: paused;
 }
 
 .software-marquee-chip {
@@ -7745,5 +7705,3 @@ body {
     transform: none !important;
   }
 }
-=======
->>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
