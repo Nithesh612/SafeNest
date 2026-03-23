@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare &amp; Discover Top Software | SafeNest</title>
+  <meta name="description"
+    content="Compare the best software side-by-side. Find pricing, features, and user reviews to make informed decisions for your business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="cmp-nav">
+    <div class="cmp-nav-shell">
+      <a class="cmp-nav-logo" href="index.html" aria-label="SafeNest Home">
+        <img src="images/Logo_nav.svg" alt="SafeNest" />
+      </a>
+      <div class="cmp-nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Category</a>
+        <a href="compare.html" class="active">Compare</a>
+        <a href="index.html#experts">Ask Question</a>
+      </div>
+      <div class="cmp-nav-actions">
+        <div class="cmp-nav-search">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="#6b7280" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+          <input type="text" placeholder="Search software..." aria-label="Search software" />
+        </div>
+        <a href="pricing.html" aria-label="Cart" style="color: #fff; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.2s; margin-right: 12px;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <button class="cmp-nav-signup" type="button">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="cmp-search-hero">
+    <div class="cmp-search-hero-inner">
+      <h1 class="cmp-search-title">Compare &amp; Discover Top Software</h1>
+      <form class="cmp-top-search" onsubmit="return false;">
+        <div class="cmp-top-search-main">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="#64748b">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+          <input type="text" placeholder="Search software to compare..." />
+        </div>
+        <button class="cmp-top-search-btn">Compare</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════ ADD PRODUCT TO COMPARE ══════════════════ -->
+  <section class="cmp-add-section" id="compare-tool">
+    <div style="max-width:1280px;margin:0 auto;">
+      <h2 class="cmp-add-heading">Add Product to Compare</h2>
+      <div class="cmp-add-grid">
+        <!-- Card 1 -->
+        <div class="cmp-add-card">
+          <div class="cmp-add-icon">🔍</div>
+          <div class="cmp-add-label">Add Product</div>
+          <div class="cmp-add-sub">Search first software</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="cmp-add-card">
+          <div class="cmp-add-icon">🔍</div>
+          <div class="cmp-add-label">Add Product</div>
+          <div class="cmp-add-sub">Search second software</div>
+        </div>
+        <!-- Card 3 -->
+        <div class="cmp-add-card">
+          <div class="cmp-add-icon">🔍</div>
+          <div class="cmp-add-label">Add Product</div>
+          <div class="cmp-add-sub">Search third software</div>
+        </div>
+      </div>
+      <div class="cmp-add-actions">
+        <div class="cmp-add-note">You can compare a maximum of any three software products.</div>
+        <button class="cmp-add-cta">Compare Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ TRENDING COMPARISONS ══════════════════ -->
+  <section class="cmp-trending">
+    <div class="cmp-trending-header">
+      <h2>Trending Product Comparison</h2>
+      <p>The most popular head-to-head battles this week</p>
+    </div>
+    <div class="cmp-trending-grid">
+
+      <!-- Card 1: AlignBooks & TallyPrime -->
+      <div class="cmp-trend-card">
+        <div class="cmp-trend-logos">
+          <img src="images/2961_alignbooks.webp" alt="AlignBooks" />
+          <img src="images/2967_tallyprimelogo.webp" alt="TallyPrime" />
+        </div>
+        <div class="cmp-trend-name">AlignBooks &amp; TallyPrime</div>
+        <div class="cmp-trend-meta">
+          <span class="stars">★★★★☆</span>
+          <span style="font-size:0.875rem;font-weight:500;color:#000;">3.8</span>
+        </div>
+        <button class="cmp-trend-btn-solid">Compare Now</button>
+      </div>
+
+      <!-- Card 2: myBillBook & Vyapar -->
+      <div class="cmp-trend-card">
+        <div class="cmp-trend-logos">
+          <img src="images/16569_16569_MyBillbook.png" alt="myBillBook" />
+          <img src="images/10918_vyapar_logo.png" alt="Vyapar" />
+        </div>
+        <div class="cmp-trend-name">myBillBook &amp; Vyapar Billing Software</div>
+        <div class="cmp-trend-meta">
+          <span class="stars">★★★★★</span>
+          <span class="count">950 reviews</span>
+        </div>
+        <button class="cmp-trend-btn-outline">Compare Now</button>
+      </div>
+
+      <!-- Card 3: Exotel & Knowlarity -->
+      <div class="cmp-trend-card">
+        <div class="cmp-trend-logos">
+          <img src="images/11217_Exotelproductlogo.webp" alt="Exotel" />
+          <img src="images/2889_knowlarity-logo.webp" alt="Knowlarity" />
+        </div>
+        <div class="cmp-trend-name">Exotel &amp; Knowlarity SuperReceptionist</div>
+        <div class="cmp-trend-meta">
+          <span class="stars">★★★★★</span>
+          <span class="count">2,100 reviews</span>
+        </div>
+        <button class="cmp-trend-btn-outline">Compare Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ VISUAL HERO ══════════════════ -->
+  <section class="cmp-hero">
+    <div class="cmp-hero-shell">
+      <div class="cmp-hero-top">
+        <div class="cmp-rating-row">
+          <div class="cmp-avatars">
+            <img src="images/pexels-alexfu-1188751.jpg" alt="User 1" />
+            <img src="images/pexels-fauxels-3184291.jpg" alt="User 2" />
+            <img src="images/pexels-ron-lach-8100067.jpg" alt="User 3" />
+            <img src="images/pexels-markusspiske-4439901.jpg" alt="User 4" />
+          </div>
+          <div class="cmp-rating-copy">
+            <span class="cmp-rating-stars">★★★★★</span>
+            <span>4.9/5 Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cmp-hero-query">Over 30,000+ User Queries Resolved</div>
+
+      <div class="cmp-hero-stage">
+        <div class="cmp-hero-circle"></div>
+        <img src="images/men_laptop.png" alt="Person comparing software options" class="cmp-hero-figure" />
+        <div class="cmp-hero-copy">Pricing, features, and specifications to make informed decisions for your business or
+          personal needs.</div>
+        <div class="cmp-hero-bg-text">
+          <div class="cmp-hero-bg-line cmp-hero-bg-line--spread">
+            <span>Explore</span>
+            <span>Compare</span>
+          </div>
+          <div class="cmp-hero-bg-line cmp-hero-bg-line--left">
+            <span>The Software</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ TIPS + PHOTO ROW ══════════════════ -->
+  <div class="container" style="padding-bottom:64px;">
+    <div class="cmp-tips-row" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+
+      <!-- LEFT: Tips card -->
+      <div style="display:flex;justify-content:center;">
+        <div class="cmp-tips-card">
+          <div class="cmp-tips-top">Tips for Asking a Question</div>
+          <div class="cmp-tips-sep"></div>
+          <div class="cmp-tips-list">
+            <div class="cmp-tips-item">
+              <div class="cmp-tips-dot">
+                <svg viewBox="0 0 8 8" fill="white">
+                  <path d="M1 4l2 2 4-4" />
+                </svg>
+              </div>
+              <span>Ask a descriptive and elaborate question.</span>
+            </div>
+            <div class="cmp-tips-item">
+              <div class="cmp-tips-dot">
+                <svg viewBox="0 0 8 8" fill="white">
+                  <path d="M1 4l2 2 4-4" />
+                </svg>
+              </div>
+              <span>Keep your language and tone professional.</span>
+            </div>
+            <div class="cmp-tips-item">
+              <div class="cmp-tips-dot">
+                <svg viewBox="0 0 8 8" fill="white">
+                  <path d="M1 4l2 2 4-4" />
+                </svg>
+              </div>
+              <span>Ask questions that will lead to a deeper understanding.</span>
+            </div>
+            <div class="cmp-tips-item">
+              <div class="cmp-tips-dot">
+                <svg viewBox="0 0 8 8" fill="white">
+                  <path d="M1 4l2 2 4-4" />
+                </svg>
+              </div>
+              <span>Time Management</span>
+            </div>
+            <div class="cmp-tips-item">
+              <div class="cmp-tips-dot">
+                <svg viewBox="0 0 8 8" fill="white">
+                  <path d="M1 4l2 2 4-4" />
+                </svg>
+              </div>
+              <span>Maintain a Positive Attitude</span>
+            </div>
+          </div>
+          <button class="cmp-tips-cta" type="button" onclick="location.href='index.html#experts'">Get Your
+            Success</button>
+        </div>
+      </div>
+
+      <!-- RIGHT: Unsplash team photo -->
+      <div class="cmp-tips-photo" style="border-radius:16px;overflow:hidden;height:361px;">
+        <img src="images/pexels-fauxels-3184291.jpg" alt="Team at work"
+          style="width:100%;height:100%;object-fit:cover;" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ FAQ ══════════════════ -->
+  <div class="cmp-faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="cmp-faq-item">
+      <p>Which software is best for a small retail shop?</p>
+      <span class="cmp-faq-arrow">▼</span>
+    </div>
+    <div class="cmp-faq-item">
+      <p>Do these softwares support Cloud hosting?</p>
+      <span class="cmp-faq-arrow">▼</span>
+    </div>
+    <div class="cmp-faq-item">
+      <p>Is TallyPrime easier to use than Busy?</p>
+      <span class="cmp-faq-arrow">▼</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════ STILL GOT QUESTIONS BANNER ══════════════════ -->
+  <div class="cmp-qbanner">
+    <p>Still got Questions on your mind?<br />Get answered by real users or software experts</p>
+    <button class="cmp-qbanner-btn" onclick="location.href='index.html#experts'">Ask Questions</button>
+  </div>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.2rem;">
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#00C896" />
+              <path d="M8 22L16 10l8 12" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="16" cy="10" r="2" fill="#0A1628" />
+            </svg>
+            Safe<span>Nest</span>
+          </a>
+          <p>India's most trusted software marketplace. Discover, compare, and buy the best software for your business
+            needs.</p>
+          <div class="app-badges">
+            <a href="#" class="app-badge">📱 App Store</a>
+            <a href="#" class="app-badge">▶ Google Play</a>
+          </div>
+          <div class="footer-socials" style="margin-top:16px;">
+            <a href="#">in</a>
+            <a href="#">𝕏</a>
+            <a href="#">f</a>
+            <a href="#">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Software</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Deals &amp; Offers</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Free Software</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Buyer's Guide</a></li>
+            <li><a href="#">Software Reviews</a></li>
+            <li><a href="#">Comparisons</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p style="color:rgba(255,255,255,.4);">© 2025 SafeNest Pvt. Ltd. All rights reserved.</p>
+        <p style="color:rgba(255,255,255,.4);">Made with in India</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+(function () {
+  var STYLE_ID = "page-loader-style";
+  var OVERLAY_ID = "page-loader-overlay";
+  var NAV_STYLE_ID = "page-loader-nav-style";
+  var NAV_DELAY_MS = 720;
+  var isNavigating = false;
+
+  function ensureStyles() {
+    if (document.getElementById(STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent = [
+      ".page-loader-active { overflow: hidden; }",
+      ".page-loader-overlay {",
+      "  position: fixed;",
+      "  inset: 0;",
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  background: rgba(4, 7, 12, 0.94);",
+      "  opacity: 0;",
+      "  visibility: hidden;",
+      "  pointer-events: none;",
+      "  transition: opacity 0.25s ease, visibility 0.25s ease;",
+      "  z-index: 99999;",
+      "}",
+      ".page-loader-overlay.is-visible {",
+      "  opacity: 1;",
+      "  visibility: visible;",
+      "  pointer-events: auto;",
+      "}",
+      ".page-loader-overlay .loader-wrapper {",
+      "  position: relative;",
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  gap: 2px;",
+      "  min-height: 120px;",
+      "  margin: 0;",
+      "  font-family: 'Poppins', 'Inter', sans-serif;",
+      "  font-size: 1.6em;",
+      "  font-weight: 600;",
+      "  user-select: none;",
+      "  color: #ffffff;",
+      "  transform: scale(1.5);",
+      "}",
+      ".page-loader-overlay .loader {",
+      "  position: absolute;",
+      "  inset: 0;",
+      "  z-index: 1;",
+      "  background-color: transparent;",
+      "  -webkit-mask: repeating-linear-gradient(90deg, transparent 0, transparent 6px, black 7px, black 8px);",
+      "  mask: repeating-linear-gradient(90deg, transparent 0, transparent 6px, black 7px, black 8px);",
+      "}",
+      ".page-loader-overlay .loader::after {",
+      "  content: '';",
+      "  position: absolute;",
+      "  inset: 0;",
+      "  background-image:",
+      "    radial-gradient(circle at 50% 50%, rgb(200, 255, 0) 0%, transparent 50%),",
+      "    radial-gradient(circle at 45% 45%, #f00 0%, transparent 45%),",
+      "    radial-gradient(circle at 55% 55%, #0ff 0%, transparent 45%),",
+      "    radial-gradient(circle at 45% 55%, #0f0 0%, transparent 45%),",
+      "    radial-gradient(circle at 55% 45%, #00f 0%, transparent 45%);",
+      "  -webkit-mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);",
+      "  mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);",
+      "  animation: page-loader-transform 2s infinite alternate, page-loader-opacity 4s infinite;",
+      "  animation-timing-function: cubic-bezier(0.6, 0.8, 0.5, 1);",
+      "}",
+      ".page-loader-overlay .loader-letter {",
+      "  display: inline-block;",
+      "  opacity: 0;",
+      "  animation: page-loader-letter 4s infinite linear;",
+      "  z-index: 2;",
+      "}",
+      ".page-loader-overlay .loader-letter:nth-child(1) { animation-delay: 0.10s; }",
+      ".page-loader-overlay .loader-letter:nth-child(2) { animation-delay: 0.205s; }",
+      ".page-loader-overlay .loader-letter:nth-child(3) { animation-delay: 0.31s; }",
+      ".page-loader-overlay .loader-letter:nth-child(4) { animation-delay: 0.415s; }",
+      ".page-loader-overlay .loader-letter:nth-child(5) { animation-delay: 0.521s; }",
+      ".page-loader-overlay .loader-letter:nth-child(6) { animation-delay: 0.626s; }",
+      ".page-loader-overlay .loader-letter:nth-child(7) { animation-delay: 0.731s; }",
+      "@keyframes page-loader-transform {",
+      "  0% { transform: translateX(-55%); }",
+      "  100% { transform: translateX(55%); }",
+      "}",
+      "@keyframes page-loader-opacity {",
+      "  0%, 100% { opacity: 0; }",
+      "  15% { opacity: 1; }",
+      "  65% { opacity: 0; }",
+      "}",
+      "@keyframes page-loader-letter {",
+      "  0% { opacity: 0; }",
+      "  5% { opacity: 1; text-shadow: 0 0 4px #000000; transform: scale(1.1) translateY(-2px); }",
+      "  20% { opacity: 0.2; }",
+      "  100% { opacity: 0; }",
+      "}",
+      "@media (max-width: 640px) {",
+      "  .page-loader-overlay .loader-wrapper { transform: scale(1.05); font-size: 1.35em; }",
+      "}"
+    ].join("\n");
+
+    document.head.appendChild(style);
+  }
+
+  function ensureOverlay() {
+    var overlay = document.getElementById(OVERLAY_ID);
+    if (overlay) {
+      return overlay;
+    }
+
+    overlay = document.createElement("div");
+    overlay.id = OVERLAY_ID;
+    overlay.className = "page-loader-overlay";
+    overlay.setAttribute("aria-hidden", "true");
+    overlay.innerHTML = [
+      '<div class="loader-wrapper">',
+      '  <span class="loader-letter">L</span>',
+      '  <span class="loader-letter">O</span>',
+      '  <span class="loader-letter">A</span>',
+      '  <span class="loader-letter">D</span>',
+      '  <span class="loader-letter">I</span>',
+      '  <span class="loader-letter">N</span>',
+      '  <span class="loader-letter">G</span>',
+      '  <div class="loader"></div>',
+      '</div>'
+    ].join("\n");
+
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+
+  function ensureNavStyles() {
+    if (document.getElementById(NAV_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = NAV_STYLE_ID;
+    style.textContent = [
+      ".cmp-mobile-menu-open { overflow: hidden; }",
+      ".cmp-nav-toggle {",
+      "  display: none;",
+      "  width: 46px;",
+      "  height: 46px;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  flex-direction: column;",
+      "  gap: 5px;",
+      "  border: 1px solid rgba(255,255,255,0.14);",
+      "  border-radius: 14px;",
+      "  background: #0d1825;",
+      "  color: #ffffff;",
+      "  box-shadow: 0 10px 24px rgba(0,0,0,0.18);",
+      "  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;",
+      "  flex: 0 0 auto;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] {",
+      "  background: #000000;",
+      "  border-color: rgba(255,255,255,0.24);",
+      "  box-shadow: 0 12px 28px rgba(0,0,0,0.28);",
+      "}",
+      ".cmp-nav-toggle span {",
+      "  display: block;",
+      "  width: 18px;",
+      "  height: 2px;",
+      "  background: currentColor;",
+      "  border-radius: 999px;",
+      "  transition: transform 0.2s ease, opacity 0.2s ease;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(1) {",
+      "  transform: translateY(7px) rotate(45deg);",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(2) {",
+      "  opacity: 0;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(3) {",
+      "  transform: translateY(-7px) rotate(-45deg);",
+      "}",
+      "@media (max-width: 900px) {",
+      "  .cmp-nav {",
+      "    padding: 14px 16px !important;",
+      "    min-height: auto !important;",
+      "    align-items: center !important;",
+      "    gap: 12px !important;",
+      "  }",
+      "  .cmp-nav-shell {",
+      "    width: 100% !important;",
+      "    min-height: auto !important;",
+      "    padding: 0 !important;",
+      "  }",
+      "  .cmp-nav,",
+      "  .cmp-nav-shell {",
+      "    display: flex !important;",
+      "    flex-wrap: wrap !important;",
+      "    align-items: center !important;",
+      "    justify-content: space-between !important;",
+      "    row-gap: 12px !important;",
+      "  }",
+      "  .cmp-nav-logo {",
+      "    margin-right: auto !important;",
+      "  }",
+      "  .cmp-nav-toggle {",
+      "    display: inline-flex !important;",
+      "  }",
+      "  .cmp-nav .cmp-nav-links,",
+      "  .cmp-nav .cmp-nav-actions {",
+      "    display: none !important;",
+      "    width: 100% !important;",
+      "    flex: 0 0 100% !important;",
+      "    margin-left: 0 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open,",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-shell {",
+      "    background: #000000 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open {",
+      "    box-shadow: 0 18px 42px rgba(0,0,0,0.32) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-shell {",
+      "    align-items: stretch !important;",
+      "    row-gap: 10px !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-links {",
+      "    display: flex !important;",
+      "    flex-direction: column !important;",
+      "    align-items: stretch !important;",
+      "    gap: 8px !important;",
+      "    padding-top: 12px !important;",
+      "    background: #000000 !important;",
+      "    border-top: 1px solid rgba(255,255,255,0.08) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-links a {",
+      "    display: block !important;",
+      "    width: 100% !important;",
+      "    padding: 12px 14px !important;",
+      "    border-radius: 12px !important;",
+      "    color: #ffffff !important;",
+      "    background: rgba(255,255,255,0.06) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-actions {",
+      "    display: flex !important;",
+      "    flex-direction: column !important;",
+      "    align-items: stretch !important;",
+      "    gap: 12px !important;",
+      "    padding-top: 12px !important;",
+      "    padding-bottom: 4px !important;",
+      "    background: #000000 !important;",
+      "    border-top: 1px solid rgba(255,255,255,0.08) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search {",
+      "    display: flex !important;",
+      "    width: 100% !important;",
+      "    max-width: none !important;",
+      "    min-width: 0 !important;",
+      "    height: 48px !important;",
+      "    background: #111827 !important;",
+      "    border: 1px solid rgba(255,255,255,0.08) !important;",
+      "    box-shadow: none !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search input {",
+      "    color: #ffffff !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search input::placeholder {",
+      "    color: #94a3b8 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-actions > a {",
+      "    margin-right: 0 !important;",
+      "    align-self: flex-start !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-signup {",
+      "    width: 100% !important;",
+      "    min-width: 0 !important;",
+      "  }",
+      "}",
+      "@media (max-width: 560px) {",
+      "  .cmp-nav {",
+      "    padding: 12px 14px !important;",
+      "  }",
+      "  .cmp-nav-logo img {",
+      "    height: 34px !important;",
+      "  }",
+      "}"
+    ].join("\n");
+
+    document.head.appendChild(style);
+  }
+
+  function setNavOpenState(nav, toggle, isOpen) {
+    nav.classList.toggle("cmp-nav-open", isOpen);
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    document.body.classList.toggle(
+      "cmp-mobile-menu-open",
+      document.querySelector(".cmp-nav.cmp-nav-open") !== null
+    );
+  }
+
+  function setupMobileNav() {
+    ensureNavStyles();
+
+    Array.prototype.forEach.call(document.querySelectorAll(".cmp-nav"), function (nav, index) {
+      if (nav.dataset.mobileNavReady === "true") {
+        return;
+      }
+
+      var navShell = nav.querySelector(".cmp-nav-shell");
+      var toggleHost = navShell || nav;
+      var links = toggleHost.querySelector(".cmp-nav-links");
+      var actions = toggleHost.querySelector(".cmp-nav-actions");
+
+      if (!links || !actions) {
+        return;
+      }
+
+      var toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "cmp-nav-toggle";
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation menu");
+      toggle.setAttribute("aria-controls", "cmp-mobile-nav-" + index);
+      toggle.innerHTML = "<span></span><span></span><span></span>";
+
+      links.id = "cmp-mobile-nav-" + index;
+      toggleHost.insertBefore(toggle, links);
+
+      toggle.addEventListener("click", function () {
+        setNavOpenState(nav, toggle, !nav.classList.contains("cmp-nav-open"));
+      });
+
+      links.addEventListener("click", function (event) {
+        if (event.target.closest("a[href]")) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      actions.addEventListener("click", function (event) {
+        if (event.target.closest("a[href]")) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!nav.contains(event.target)) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 900) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      nav.dataset.mobileNavReady = "true";
+    });
+  }
+
+  function ensureLoader() {
+    ensureStyles();
+    return ensureOverlay();
+  }
+
+  function resetLoader() {
+    var overlay = document.getElementById(OVERLAY_ID);
+    isNavigating = false;
+    document.body.classList.remove("page-loader-active");
+
+    if (overlay) {
+      overlay.classList.remove("is-visible");
+    }
+  }
+
+  function showLoader(nextHref) {
+    var overlay = ensureLoader();
+
+    if (isNavigating) {
+      return;
+    }
+
+    isNavigating = true;
+    document.body.classList.add("page-loader-active");
+    overlay.classList.add("is-visible");
+
+    if (nextHref) {
+      window.setTimeout(function () {
+        window.location.href = nextHref;
+      }, NAV_DELAY_MS);
+    }
+  }
+
+  function isModifiedClick(event) {
+    return event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+  }
+
+  function isSameDocument(url) {
+    return url.pathname === window.location.pathname && url.search === window.location.search;
+  }
+
+  function resolveInternalHref(rawHref) {
+    if (!rawHref) {
+      return null;
+    }
+
+    var trimmedHref = rawHref.trim();
+    if (!trimmedHref || trimmedHref === "#" || trimmedHref.indexOf("javascript:") === 0) {
+      return null;
+    }
+
+    if (trimmedHref.indexOf("mailto:") === 0 || trimmedHref.indexOf("tel:") === 0) {
+      return null;
+    }
+
+    var url = new URL(trimmedHref, window.location.href);
+    if (url.origin !== window.location.origin) {
+      return null;
+    }
+
+    return url;
+  }
+
+  function handleInlineLocationClick(event) {
+    var trigger = event.target.closest("[onclick*='location.href'], [onclick*='window.location.href']");
+    if (!trigger || trigger.closest("a[href]")) {
+      return false;
+    }
+
+    var onclickValue = trigger.getAttribute("onclick");
+    var match = onclickValue && onclickValue.match(/(?:window\.)?location\.href\s*=\s*['"]([^'"]+)['"]/);
+    if (!match) {
+      return false;
+    }
+
+    var url = resolveInternalHref(match[1]);
+    if (!url || isSameDocument(url)) {
+      return false;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    if (typeof event.stopImmediatePropagation === "function") {
+      event.stopImmediatePropagation();
+    }
+
+    showLoader(url.href);
+    return true;
+  }
+
+  function handleAnchorClick(event) {
+    var anchor = event.target.closest("a[href]");
+    if (!anchor) {
+      return;
+    }
+
+    if (anchor.target && anchor.target !== "_self") {
+      return;
+    }
+
+    if (anchor.hasAttribute("download") || anchor.dataset.noLoader !== undefined) {
+      return;
+    }
+
+    if (isModifiedClick(event)) {
+      return;
+    }
+
+    var url = resolveInternalHref(anchor.getAttribute("href"));
+    if (!url || isSameDocument(url)) {
+      return;
+    }
+
+    event.preventDefault();
+    showLoader(url.href);
+  }
+
+  function bindEvents() {
+    document.addEventListener(
+      "click",
+      function (event) {
+        if (handleInlineLocationClick(event)) {
+          return;
+        }
+
+        handleAnchorClick(event);
+      },
+      true
+    );
+
+    window.addEventListener("pageshow", resetLoader);
+    window.addEventListener("load", resetLoader);
+  }
+
+  function init() {
+    ensureLoader();
+    setupMobileNav();
+    resetLoader();
+    bindEvents();
+    window.showPageLoader = showLoader;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+
+</html>
+

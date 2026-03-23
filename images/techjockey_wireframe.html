@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechJockey – Homepage Wireframe (Day 1)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #f5f4f0;
+    --wire: #2a2a2a;
+    --muted: #999;
+    --accent: #ff6b35;
+    --box: #e8e6e0;
+    --border: #ccc;
+    --label: #555;
+    --white: #fff;
+    --section-gap: 32px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--wire);
+    font-size: 13px;
+  }
+
+  /* ── Wireframe utility ── */
+  .wf-box {
+    background: var(--box);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+  }
+  .wf-box-white {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+  }
+  .wf-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .wf-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--label);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .wf-placeholder {
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 4px,
+      rgba(0,0,0,.06) 4px,
+      rgba(0,0,0,.06) 5px
+    );
+    border-radius: 3px;
+  }
+  .wf-img { width: 100%; background: var(--box); border-radius: 3px; }
+  .wf-btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1.5px solid var(--wire);
+    border-radius: 3px;
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .wf-btn-fill {
+    background: var(--wire);
+    color: var(--white);
+  }
+  .wf-btn-accent {
+    background: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+  }
+  .wf-divider {
+    border: none;
+    border-top: 1px dashed var(--border);
+    margin: var(--section-gap) 0;
+  }
+  .section-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--accent);
+    background: rgba(255,107,53,.08);
+    border: 1px solid rgba(255,107,53,.25);
+    border-radius: 3px;
+    padding: 2px 7px;
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  /* ── Layout ── */
+  .page-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  .doc-header {
+    background: var(--wire);
+    color: var(--white);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .doc-header h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .06em;
+  }
+  .doc-header span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: #aaa;
+  }
+
+  /* ── 1. NAVBAR ── */
+  .navbar {
+    height: 58px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .navbar .logo-block {
+    width: 110px;
+    height: 28px;
+    border-radius: 3px;
+    background: var(--box);
+    border: 1.5px dashed var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .nav-item {
+    font-size: 11px;
+    color: var(--label);
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: default;
+    white-space: nowrap;
+  }
+  .navbar .spacer { flex: 1; }
+  .navbar .search-box {
+    width: 180px;
+    height: 28px;
+    border: 1.5px solid var(--border);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .dropdown-arrow { font-size: 9px; color: var(--muted); }
+
+  /* ── 2. HERO ── */
+  .hero {
+    background: var(--wire);
+    border-radius: 6px;
+    padding: 48px 40px 40px;
+    margin-top: 28px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: 60px; top: 30px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    border: 1.5px dashed rgba(255,255,255,.15);
+  }
+  .hero-tag { font-family: 'IBM Plex Mono',monospace; font-size:10px; color:rgba(255,255,255,.5); letter-spacing:.1em; text-transform:uppercase; margin-bottom:12px; }
+  .hero-h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    max-width: 540px;
+    color: var(--white);
+    margin-bottom: 24px;
+  }
+  .hero-h1 .highlight {
+    display: inline-block;
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+  }
+  .hero-search {
+    display: flex;
+    gap: 0;
+    max-width: 520px;
+    margin-bottom: 32px;
+  }
+  .hero-search input {
+    flex: 1;
+    height: 44px;
+    background: rgba(255,255,255,.1);
+    border: 1.5px solid rgba(255,255,255,.25);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    padding: 0 14px;
+    color: rgba(255,255,255,.5);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    outline: none;
+  }
+  .hero-search button {
+    height: 44px;
+    padding: 0 22px;
+    background: var(--accent);
+    border: 1.5px solid var(--accent);
+    border-radius: 0 4px 4px 0;
+    color: var(--white);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: default;
+    text-transform: uppercase;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+  }
+  .hero-stat .num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .hero-stat .desc {
+    font-size: 11px;
+    color: rgba(255,255,255,.5);
+    margin-top: 2px;
+  }
+  .brand-strip {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .brand-logo-wf {
+    width: 72px; height: 28px;
+    background: rgba(255,255,255,.08);
+    border: 1px dashed rgba(255,255,255,.2);
+    border-radius: 3px;
+  }
+
+  /* ── 3. CATEGORIES ── */
+  .section { margin-top: var(--section-gap); }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .section-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .cat-card {
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 130px;
+  }
+  .cat-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: var(--border);
+    border: 1.5px dashed var(--muted);
+  }
+  .cat-name { font-size: 12px; font-weight: 600; }
+  .cat-desc { font-size: 10px; color: var(--muted); line-height: 1.4; }
+
+  /* ── 4. HOW IT WORKS ── */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .step-card {
+    padding: 24px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .step-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--border);
+  }
+  .step-title { font-size: 13px; font-weight: 600; }
+  .step-desc { font-size: 11px; color: var(--muted); line-height: 1.5; }
+  .step-cta {
+    margin-top: auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  /* ── 5. SOFTWARE BY CATEGORY ── */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0;
+  }
+  .tab {
+    padding: 8px 14px;
+    font-size: 11px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: default;
+    border-radius: 3px 3px 0 0;
+    border: 1.5px solid transparent;
+  }
+  .tab.active {
+    color: var(--wire);
+    border-color: var(--border);
+    border-bottom-color: var(--bg);
+    background: var(--bg);
+    margin-bottom: -2px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .product-card {
+    padding: 14px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .product-img {
+    width: 44px; height: 44px;
+    border-radius: 6px;
+    border: 1.5px dashed var(--border);
+    background: var(--bg);
+  }
+  .product-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: var(--border);
+    color: var(--label);
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+  .product-name { font-size: 12px; font-weight: 600; }
+  .product-brand { font-size: 10px; color: var(--muted); }
+  .product-rating { font-size: 11px; color: var(--wire); }
+  .product-price { font-size: 12px; font-weight: 600; color: var(--wire); }
+  .product-save { font-size: 10px; color: var(--accent); }
+
+  /* ── 6. BRANDS ── */
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+  .brand-card {
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand-inner {
+    width: 60px; height: 20px;
+    background: var(--border);
+    border-radius: 2px;
+  }
+
+  /* ── 7. TESTIMONIALS ── */
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .review-card {
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 120px;
+  }
+  .review-stars { font-size: 13px; color: var(--border); }
+  .review-text {
+    flex: 1;
+    background: var(--bg);
+    border-radius: 3px;
+    padding: 6px;
+  }
+  .review-text .line {
+    height: 8px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+  .review-text .line.short { width: 60%; }
+  .review-author { font-size: 10px; color: var(--muted); }
+
+  /* ── 8. BLOG ── */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .blog-card {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-img {
+    height: 110px;
+    background: var(--box);
+    border-bottom: 1.5px solid var(--border);
+  }
+  .blog-content { padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+  .blog-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .blog-headline { font-size: 12px; font-weight: 600; line-height: 1.4; }
+  .blog-meta { font-size: 10px; color: var(--muted); }
+
+  /* ── 9. CTA BANNER ── */
+  .cta-banner {
+    background: var(--wire);
+    border-radius: 6px;
+    padding: 36px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: var(--section-gap);
+  }
+  .cta-banner h3 { color: var(--white); font-size: 18px; max-width: 380px; line-height: 1.4; }
+  .cta-banner p { color: rgba(255,255,255,.5); font-size: 11px; margin-top: 6px; }
+
+  /* ── 10. FOOTER ── */
+  .footer {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    margin-top: var(--section-gap);
+    padding: 28px 24px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer-col h4 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+  .footer-link { height: 8px; background: var(--border); border-radius: 2px; margin-bottom: 7px; }
+  .footer-link.short { width: 65%; }
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-bottom span { font-size: 10px; color: var(--muted); }
+  .payment-badges { display: flex; gap: 6px; }
+  .payment-badge { width: 36px; height: 20px; background: var(--box); border-radius: 3px; border: 1px solid var(--border); }
+
+  /* ── Annotation layer ── */
+  .annot {
+    position: relative;
+  }
+  .annot-note {
+    position: absolute;
+    right: -180px;
+    top: 0;
+    width: 160px;
+    background: #fffde7;
+    border: 1px solid #f0c040;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: #7a5c00;
+    line-height: 1.5;
+    z-index: 10;
+  }
+  .annot-note::before {
+    content: '';
+    position: absolute;
+    left: -8px; top: 10px;
+    border: 4px solid transparent;
+    border-right-color: #f0c040;
+  }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <h1>📐 TechJockey.com — Homepage Wireframe</h1>
+  <span>Day 1 · Low-Fidelity · v1.0</span>
+</div>
+
+<div class="page-wrap" style="position:relative;">
+
+  <!-- SECTION LABEL -->
+  <div style="margin-top:32px; margin-bottom:-8px;">
+    <span class="section-tag">Section 01</span>
+    <span class="wf-label" style="margin-left:8px;">Header / Navigation</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="navbar annot">
+    <div class="logo-block">
+      <span class="wf-label">Logo</span>
+    </div>
+    <div class="nav-item">Categories <span class="dropdown-arrow">▾</span></div>
+    <div class="nav-item">Brands <span class="dropdown-arrow">▾</span></div>
+    <div class="nav-item">Industry <span class="dropdown-arrow">▾</span></div>
+    <div class="nav-item">Compare</div>
+    <div class="nav-item">Ask Question</div>
+    <div class="nav-item">Blog</div>
+    <div class="spacer"></div>
+    <div class="nav-item">🇮🇳 India <span class="dropdown-arrow">▾</span></div>
+    <div class="search-box"><span>🔍</span><span>Search...</span></div>
+    <div class="wf-btn wf-btn-accent" style="font-size:10px; padding:5px 12px;">Get Free Advice</div>
+    <div class="annot-note">Sticky nav · Logo left · CTA right · Dropdowns for Categories/Brands/Industry · Search icon · Region switcher</div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 02</span>
+  <span class="wf-label" style="margin-left:8px;">Hero Section</span>
+
+  <!-- HERO -->
+  <div class="hero annot" style="margin-top:10px;">
+    <div class="hero-tag">// Hero · Full-width dark background</div>
+    <div class="hero-h1">
+      Discover, Compare &amp; Buy the<br>
+      <span class="highlight">Best Software</span> for Your Business
+    </div>
+    <div class="hero-search">
+      <input placeholder="Search 20,000+ software products..." readonly>
+      <button>Search</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">20,000+</div>
+        <div class="desc">Products</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">300+</div>
+        <div class="desc">Trusted Brands</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">12M+</div>
+        <div class="desc">Happy Customers</div>
+      </div>
+    </div>
+    <div class="brand-strip">
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <div class="brand-logo-wf"></div>
+      <span style="color:rgba(255,255,255,.3); font-size:10px; align-self:center; margin-left:4px;">Trusted brand logos strip →</span>
+    </div>
+    <div class="annot-note" style="top:16px; background:#1a2a3a; border-color:#334; color:#aac;">Dark BG · Full-width · Search bar is primary CTA · Stats row builds trust · Scrolling brand logos below</div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 03</span>
+  <span class="wf-label" style="margin-left:8px;">Popular Categories</span>
+
+  <!-- CATEGORIES -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="wf-title">Popular Software Categories</div>
+      </div>
+      <div class="wf-btn" style="font-size:10px;">View All Categories →</div>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card wf-box annot">
+        <div class="cat-icon"></div>
+        <div class="cat-name">HR Software</div>
+        <div class="cat-desc">Boost HR Efficiency by 70%</div>
+        <div class="annot-note">Category card: Icon + Name + Tagline + Arrow CTA · 5 per row · 2 rows = 10 cards</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Accounting Software</div>
+        <div class="cat-desc">Growth by 40% with Automation</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">CRM Software</div>
+        <div class="cat-desc">Increase Sales by 60%</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Antivirus Software</div>
+        <div class="cat-desc">Block 99% of Threats</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">POS Software</div>
+        <div class="cat-desc">Sales by 40% with Smart POS</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Video Editing Software</div>
+        <div class="cat-desc">Edit Videos 50% Faster</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Billing & Invoicing</div>
+        <div class="cat-desc">Reduce Billing Errors by 80%</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">School Management</div>
+        <div class="cat-desc">Improve Efficiency by 65%</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Productivity Software</div>
+        <div class="cat-desc">Increase Productivity by 50%</div>
+      </div>
+      <div class="cat-card wf-box">
+        <div class="cat-icon"></div>
+        <div class="cat-name">Stock Market Software</div>
+        <div class="cat-desc">50% Faster Decisions</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 04</span>
+  <span class="wf-label" style="margin-left:8px;">How It Works – 3-Step Process</span>
+
+  <!-- HOW IT WORKS -->
+  <div class="section">
+    <div class="steps-grid">
+      <div class="step-card wf-box annot">
+        <div class="step-num">01</div>
+        <div class="step-title">Explore &amp; Compare Software</div>
+        <div class="step-desc">Discover and compare software based on pricing, features, and specifications.</div>
+        <div class="step-cta">Compare Now →</div>
+        <div class="annot-note">3-column layout · Each step has a number, title, short desc, and CTA link</div>
+      </div>
+      <div class="step-card wf-box">
+        <div class="step-num">02</div>
+        <div class="step-title">Get Expert Software Advice</div>
+        <div class="step-desc">Experience product demos with personalised guidance from our experts.</div>
+        <div class="step-cta">Get Consultation →</div>
+      </div>
+      <div class="step-card wf-box">
+        <div class="step-num">03</div>
+        <div class="step-title">Secure Payments &amp; Transactions</div>
+        <div class="step-desc">Transparent pricing with secure payment methods and EMI options available.</div>
+        <div class="step-cta">View Plans →</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 05</span>
+  <span class="wf-label" style="margin-left:8px;">Software by Category – Tabbed Listing</span>
+
+  <!-- SOFTWARE LISTING -->
+  <div class="section">
+    <div class="tabs">
+      <div class="tab active">Accounting</div>
+      <div class="tab">Antivirus</div>
+      <div class="tab">HR Software</div>
+      <div class="tab">POS</div>
+      <div class="tab">CRM</div>
+      <div class="tab">Plagiarism</div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card wf-box-white annot">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div class="product-img wf-placeholder"></div>
+          <div style="flex:1;">
+            <div class="product-badge">Sponsored</div>
+            <div class="product-name">Busy Accounting Software</div>
+            <div class="product-brand">Tolexo Online Pvt Ltd</div>
+          </div>
+        </div>
+        <div class="product-rating">★★★★☆ 4.3</div>
+        <div class="product-price">₹4,999 / Year</div>
+        <div class="product-save">Save up to 10%</div>
+        <div class="wf-btn" style="width:100%;text-align:center;margin-top:4px;font-size:10px;">View Details</div>
+        <div class="annot-note">Product card: Logo · Badge · Name · Brand · Rating · Price · Discount · CTA · 3 per row</div>
+      </div>
+      <div class="product-card wf-box-white">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div class="product-img wf-placeholder"></div>
+          <div style="flex:1;">
+            <div class="product-badge">Top Rated</div>
+            <div class="product-name">Lead Accounting Plus</div>
+            <div class="product-brand">Wheelhouse Consultancy</div>
+          </div>
+        </div>
+        <div class="product-rating">★★★★★ 4.8</div>
+        <div class="product-price">₹999 / Month</div>
+        <div class="wf-btn" style="width:100%;text-align:center;margin-top:4px;font-size:10px;">View Details</div>
+      </div>
+      <div class="product-card wf-box-white">
+        <div style="display:flex; gap:10px; align-items:flex-start;">
+          <div class="product-img wf-placeholder"></div>
+          <div style="flex:1;">
+            <div class="product-badge">Hot Deal</div>
+            <div class="product-name">GoGSTBill</div>
+            <div class="product-brand">FinSync Technolabs</div>
+          </div>
+        </div>
+        <div class="product-rating">★★★★★ 5.0</div>
+        <div class="product-price">₹1,499 / Year <span style="text-decoration:line-through;color:var(--muted);">₹1,949</span></div>
+        <div class="product-save">Save up to 23%</div>
+        <div class="wf-btn" style="width:100%;text-align:center;margin-top:4px;font-size:10px;">View Details</div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:16px;">
+      <div class="wf-btn wf-btn-fill" style="font-size:11px;">Compare Accounting Software →</div>
+    </div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 06</span>
+  <span class="wf-label" style="margin-left:8px;">Featured Brands</span>
+
+  <!-- BRANDS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="wf-title">300+ Trusted Brands</div>
+      <div class="wf-btn" style="font-size:10px;">View All Brands →</div>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+      <div class="brand-card wf-box"><div class="brand-inner"></div></div>
+    </div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 07</span>
+  <span class="wf-label" style="margin-left:8px;">Testimonials / Reviews</span>
+
+  <!-- REVIEWS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="wf-title">1 Lakh+ Trusted Reviews</div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card wf-box annot">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line short"></div>
+        </div>
+        <div class="review-author">— Customer Name · Software Name</div>
+        <div class="annot-note">Review card: Stars · Text lines (lorem placeholder) · Author name · Product</div>
+      </div>
+      <div class="review-card wf-box">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line short"></div>
+        </div>
+        <div class="review-author">— Customer Name · Software Name</div>
+      </div>
+      <div class="review-card wf-box">
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line short"></div>
+        </div>
+        <div class="review-author">— Customer Name · Software Name</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="wf-divider">
+
+  <!-- SECTION LABEL -->
+  <span class="section-tag">Section 08</span>
+  <span class="wf-label" style="margin-left:8px;">Blog / Resources</span>
+
+  <!-- BLOG -->
+  <div class="section">
+    <div class="section-header">
+      <div class="wf-title">Latest from the Blog</div>
+      <div class="wf-btn" style="font-size:10px;">View All Articles →</div>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card wf-box annot">
+        <div class="blog-img wf-placeholder"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Category Tag</div>
+          <div class="blog-headline">Article Headline Goes Here in Two Lines</div>
+          <div class="blog-meta">Author · Date · Read time</div>
+        </div>
+        <div class="annot-note">Blog card: Cover image placeholder · Tag · Title · Meta · 3-column grid</div>
+      </div>
+      <div class="blog-card wf-box">
+        <div class="blog-img wf-placeholder"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Category Tag</div>
+          <div class="blog-headline">Article Headline Goes Here in Two Lines</div>
+          <div class="blog-meta">Author · Date · Read time</div>
+        </div>
+      </div>
+      <div class="blog-card wf-box">
+        <div class="blog-img wf-placeholder"></div>
+        <div class="blog-content">
+          <div class="blog-tag">Category Tag</div>
+          <div class="blog-headline">Article Headline Goes Here in Two Lines</div>
+          <div class="blog-meta">Author · Date · Read time</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner annot">
+    <div>
+      <span class="section-tag" style="margin-bottom:10px;">Section 09 · Full-width CTA</span>
+      <h3>Get Free Expert Software Advice for Your Business</h3>
+      <p>Our consultants will guide you to the right product — no cost, no commitment.</p>
+    </div>
+    <div class="wf-btn wf-btn-accent" style="font-size:13px; padding:12px 28px; white-space:nowrap;">Get Free Consultation</div>
+    <div class="annot-note">Dark full-width banner · Primary CTA button · Appears before footer</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span class="section-tag">Section 10 · Footer</span>
+    <div class="footer-grid" style="margin-top:14px;">
+      <div class="footer-col">
+        <div class="logo-block" style="width:100px;height:24px;margin-bottom:10px;"><span class="wf-label">Logo</span></div>
+        <div style="font-size:10px;color:var(--muted);line-height:1.6;">Short brand description text · Social icons row below</div>
+        <div style="display:flex;gap:6px;margin-top:10px;">
+          <div style="width:22px;height:22px;background:var(--border);border-radius:3px;"></div>
+          <div style="width:22px;height:22px;background:var(--border);border-radius:3px;"></div>
+          <div style="width:22px;height:22px;background:var(--border);border-radius:3px;"></div>
+          <div style="width:22px;height:22px;background:var(--border);border-radius:3px;"></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+        <div class="footer-link"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+      </div>
+      <div class="footer-col">
+        <h4>Regions</h4>
+        <div class="footer-link"></div>
+        <div class="footer-link short"></div>
+        <div class="footer-link"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Techjockey.com · Privacy Policy · Terms</span>
+      <div class="payment-badges">
+        <div class="payment-badge"></div>
+        <div class="payment-badge"></div>
+        <div class="payment-badge"></div>
+        <div class="payment-badge"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end page-wrap -->
+</body>
+</html>

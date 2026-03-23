@@ -1,0 +1,1400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeNest – Discover, Compare & Buy Software for Your Business</title>
+  <meta name="description"
+    content="Find 20,000+ business software solutions. Compare prices, read reviews, and buy the best software for your business needs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body style="margin:0;padding:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <nav class="cmp-nav">
+    <div class="cmp-nav-shell">
+      <a class="cmp-nav-logo" href="index.html" aria-label="SafeNest Home">
+        <img src="images/Logo_nav.svg" alt="SafeNest" />
+      </a>
+      <div class="cmp-nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Category</a>
+        <a href="compare.html">Compare</a>
+        <a href="index.html#experts">Ask Question</a>
+      </div>
+      <div class="cmp-nav-actions">
+        <div class="cmp-nav-search">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="#6b7280" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+          <input type="text" placeholder="Search software..." aria-label="Search software" />
+        </div>
+        <a href="pricing.html" aria-label="Cart" style="color: #fff; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.2s; margin-right: 12px;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <button class="cmp-nav-signup" type="button">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+    <style>
+    .hero-custom-override {
+      background: #0B0810;
+      background: radial-gradient(circle at 60% 130%, #3A1061 0%, #0B0810 60%);
+      padding: 110px 4% 80px;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .hero-custom-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .h-eyebrow {
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: #E2E8F0;
+      margin-bottom: 20px;
+      display: block;
+      letter-spacing: 0.01em;
+    }
+    .h-title {
+      font-size: clamp(3.2rem, 6.5vw, 6.2rem);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin: 0 0 28px;
+      text-transform: uppercase;
+    }
+    .h-title span.muted {
+      color: #7A7A7A;
+    }
+    .h-tagline {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #F8FAFC;
+      margin-bottom: 56px;
+      letter-spacing: 0.01em;
+    }
+    .h-bottom-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .h-desc {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #94A3B8;
+      max-width: 500px;
+      font-weight: 400;
+      margin: 0;
+    }
+    .h-search {
+      background: #F8FAFC;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      padding: 20px 26px;
+      width: 100%;
+      max-width: 420px;
+      gap: 14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+    .h-search svg {
+      width: 18px;
+      height: 18px;
+      fill: #94A3B8;
+      flex-shrink: 0;
+    }
+    .h-search input {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 0.85rem;
+      color: #1E293B;
+      font-family: inherit;
+    }
+    .h-separator {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.15) 30%, rgba(255,255,255,0.15) 70%, rgba(255,255,255,0.02) 100%);
+      width: 100%;
+      margin: 0 0 45px;
+    }
+    .h-stats {
+      display: flex;
+      gap: 140px;
+    }
+    .h-stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .h-stat-num {
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+    .h-stat-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: #64748B;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+    @media (max-width: 900px) {
+      .h-bottom-row { flex-direction: column; align-items: flex-start; gap: 30px; }
+      .h-stats { flex-wrap: wrap; gap: 40px; }
+      .h-title { font-size: 3rem; }
+      .h-search { max-width: 100%; }
+    }
+  </style>
+  <section class="hero-custom-override">
+    <div class="hero-custom-inner">
+      <span class="h-eyebrow">Find the Perfect</span>
+      <h1 class="h-title">SOFTWARE FOR<br /><span class="muted">YOUR</span> BUSINESS</h1>
+      <p class="h-tagline">Discover, Compare &amp; Buy the Best Software for Your Business</p>
+
+      <div class="h-bottom-row">
+        <p class="h-desc">Compare, evaluate, and buy from 10,000+ software products across 500+ categories.<br/>Trusted by over 1 million businesses worldwide.</p>
+        <form class="h-search" onsubmit="return false;">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+          <input type="text" placeholder="Search for software, category or brand..." aria-label="Search software, category or brand" />
+        </form>
+      </div>
+
+      <div class="h-separator"></div>
+
+      <div class="h-stats">
+        <div class="h-stat-item">
+          <div class="h-stat-num">20,000+</div>
+          <div class="h-stat-label">PRODUCTS</div>
+        </div>
+        <div class="h-stat-item">
+          <div class="h-stat-num">300+</div>
+          <div class="h-stat-label">TRUSTED BRANDS</div>
+        </div>
+        <div class="h-stat-item">
+          <div class="h-stat-num">12M+</div>
+          <div class="h-stat-label">HAPPY CUSTOMERS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="software-marquee-section">
+    <div class="container">
+      <div class="software-marquee-head">
+        <h2>Trusted tools teams compare<br> before they commit</h2>
+        <p>Billing, security, cloud, and enterprise software brands flowing through a buyer-friendly research journey.</p>
+      </div>
+    </div>
+    <div class="software-marquee-shell" aria-label="Popular software brands">
+      <div class="software-marquee-track software-marquee-track--left">
+        <article class="software-marquee-chip">
+          <img src="images/2967_tallyprimelogo.webp" alt="TallyPrime" />
+          <div><strong>TallyPrime</strong><span>Accounting</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/10918_vyapar_logo.png" alt="Vyapar" />
+          <div><strong>Vyapar</strong><span>Billing</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/592_QuickHealAntiVirusPro.webp" alt="Quick Heal" />
+          <div><strong>Quick Heal</strong><span>Security</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/4352_KasperskyAnti-Virus.webp" alt="Kaspersky" />
+          <div><strong>Kaspersky</strong><span>Endpoint</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/2961_alignbooks.webp" alt="AlignBooks" />
+          <div><strong>AlignBooks</strong><span>ERP</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/16569_16569_MyBillbook.png" alt="MyBillBook" />
+          <div><strong>MyBillBook</strong><span>GST</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/11217_Exotelproductlogo.webp" alt="Exotel" />
+          <div><strong>Exotel</strong><span>CX</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/2889_knowlarity-logo.webp" alt="Knowlarity" />
+          <div><strong>Knowlarity</strong><span>Telephony</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/2967_tallyprimelogo.webp" alt="" />
+          <div><strong>TallyPrime</strong><span>Accounting</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/10918_vyapar_logo.png" alt="" />
+          <div><strong>Vyapar</strong><span>Billing</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/592_QuickHealAntiVirusPro.webp" alt="" />
+          <div><strong>Quick Heal</strong><span>Security</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/4352_KasperskyAnti-Virus.webp" alt="" />
+          <div><strong>Kaspersky</strong><span>Endpoint</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/2961_alignbooks.webp" alt="" />
+          <div><strong>AlignBooks</strong><span>ERP</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/16569_16569_MyBillbook.png" alt="" />
+          <div><strong>MyBillBook</strong><span>GST</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/11217_Exotelproductlogo.webp" alt="" />
+          <div><strong>Exotel</strong><span>CX</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/2889_knowlarity-logo.webp" alt="" />
+          <div><strong>Knowlarity</strong><span>Telephony</span></div>
+        </article>
+      </div>
+      <div class="software-marquee-track software-marquee-track--right">
+        <article class="software-marquee-chip">
+          <img src="images/17717_nShieldConnectHSMlogo.webp" alt="nShield" />
+          <div><strong>nShield</strong><span>HSM</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/25010_25010_oracledatasafelogo.webp" alt="Oracle Data Safe" />
+          <div><strong>Oracle Data Safe</strong><span>Database</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/25015_25015_netwrixenterpriseauditorlogo.webp" alt="Netwrix Auditor" />
+          <div><strong>Netwrix</strong><span>Auditing</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/27991_27991_hikvisionlogo.webp" alt="Hikvision" />
+          <div><strong>Hikvision</strong><span>Surveillance</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/2249_AbaraLMSLogo.webp" alt="Abara LMS" />
+          <div><strong>Abara LMS</strong><span>LMS</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/31118_educacrm.webp" alt="Educa CRM" />
+          <div><strong>Educa CRM</strong><span>CRM</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/22733_texwaretechnologylogo.webp" alt="Texware" />
+          <div><strong>Texware</strong><span>Operations</span></div>
+        </article>
+        <article class="software-marquee-chip">
+          <img src="images/30618_edmologo.webp" alt="Edmology" />
+          <div><strong>Edmology</strong><span>Education</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/17717_nShieldConnectHSMlogo.webp" alt="" />
+          <div><strong>nShield</strong><span>HSM</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/25010_25010_oracledatasafelogo.webp" alt="" />
+          <div><strong>Oracle Data Safe</strong><span>Database</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/25015_25015_netwrixenterpriseauditorlogo.webp" alt="" />
+          <div><strong>Netwrix</strong><span>Auditing</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/27991_27991_hikvisionlogo.webp" alt="" />
+          <div><strong>Hikvision</strong><span>Surveillance</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/2249_AbaraLMSLogo.webp" alt="" />
+          <div><strong>Abara LMS</strong><span>LMS</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/31118_educacrm.webp" alt="" />
+          <div><strong>Educa CRM</strong><span>CRM</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/22733_texwaretechnologylogo.webp" alt="" />
+          <div><strong>Texware</strong><span>Operations</span></div>
+        </article>
+        <article class="software-marquee-chip" aria-hidden="true">
+          <img src="images/30618_edmologo.webp" alt="" />
+          <div><strong>Edmology</strong><span>Education</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ POPULAR CATEGORIES ═══════════════════════════════════════ -->
+  <section class="home-categories-section" style="padding:56px 0;background:#f8fafc;">
+    <div class="container">
+      <div class="home-categories-header"
+        style="display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px;flex-wrap:wrap;">
+        <div>
+          <h2 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#1a2332;">Popular Software Categories</h2>
+        </div>
+        <a href="category.html" class="btn btn-outline">View All Categories &#8594;</a>
+      </div>
+
+      <div class="home-categories-grid"
+        style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-bottom:20px;">
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:200px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/pexels-pixabay-257904.jpg" alt="Accounting"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">Accounting
+            &amp; Finance</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:200px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/pexels-fauxels-3184291.jpg" alt="ERP"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">ERP
+            Software</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:200px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/workplace-violence-taking-place-colleagues.jpg" alt="HR"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">HR &amp;
+            Payroll</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:200px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/pexels-alexfu-1188751.jpg" alt="CRM"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">CRM
+            Software</span>
+        </a>
+      </div>
+
+      <div class="home-categories-grid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;">
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:180px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/lock.jpeg" alt="Security" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">Cyber
+            Security</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:180px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/pexels-markusspiske-4439901.jpg" alt="Cloud"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">Cloud
+            Services</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:180px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/assets/Buy_files/img_cat_crm.webp" alt="Inventory"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">Inventory
+            Management</span>
+        </a>
+        <a class="home-category-card" href="category.html"
+          style="position:relative;height:180px;border-radius:18px;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(15,23,42,.08);">
+          <img src="images/pexels-ron-lach-8100067.jpg" alt="GST"
+            style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div
+            style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.76) 100%);">
+          </div>
+          <span style="position:absolute;left:16px;bottom:16px;font-size:1rem;font-weight:700;color:#fff;">GST &amp;
+            Billing</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-compare-section home-compare-section--revamp">
+    <div class="container">
+      <div class="home-compare-showcase">
+        <div class="home-compare-copy-block">
+          <span class="home-kicker">Explore and Compare Software</span>
+          <h2>See the right software stack before your team signs off.</h2>
+          <p>Inspired by premium SaaS product storytelling, this space brings pricing, deployment, support quality, and business fit into one clean comparison workflow.</p>
+          <div class="home-compare-badges">
+            <span>Pricing snapshots</span>
+            <span>Review signals</span>
+            <span>Category fit</span>
+            <span>Deployment clarity</span>
+          </div>
+          <div class="home-compare-actions">
+            <a href="compare.html" class="showcase-btn showcase-btn--solid">Compare Software</a>
+            <a href="products.html" class="showcase-btn showcase-btn--ghost">Browse Categories</a>
+          </div>
+        </div>
+
+        <div class="home-compare-board">
+          <div class="home-compare-board-top">
+            <div>
+              <span class="home-compare-board-label">Comparison Workspace</span>
+              <h3>Shortlist, score, and move ahead faster.</h3>
+            </div>
+            <span class="home-compare-board-status">3 tools live</span>
+          </div>
+
+          <div class="home-compare-stack">
+            <article class="home-compare-stack-card is-featured">
+              <div class="home-compare-stack-logo">
+                <img src="images/2967_tallyprimelogo.webp" alt="TallyPrime" />
+              </div>
+              <div class="home-compare-stack-meta">
+                <strong>TallyPrime</strong>
+                <span>Best for finance-heavy teams</span>
+              </div>
+              <div class="home-compare-stack-score">
+                <span>9.2</span>
+                <small>Score</small>
+              </div>
+            </article>
+
+            <article class="home-compare-stack-card">
+              <div class="home-compare-stack-logo">
+                <img src="images/10918_vyapar_logo.png" alt="Vyapar" />
+              </div>
+              <div class="home-compare-stack-meta">
+                <strong>Vyapar</strong>
+                <span>Fast setup for SMB billing</span>
+              </div>
+              <div class="home-compare-stack-score">
+                <span>8.7</span>
+                <small>Score</small>
+              </div>
+            </article>
+
+            <article class="home-compare-stack-card">
+              <div class="home-compare-stack-logo">
+                <img src="images/4352_KasperskyAnti-Virus.webp" alt="Kaspersky" />
+              </div>
+              <div class="home-compare-stack-meta">
+                <strong>Kaspersky</strong>
+                <span>Security-first endpoint suite</span>
+              </div>
+              <div class="home-compare-stack-score">
+                <span>8.9</span>
+                <small>Score</small>
+              </div>
+            </article>
+          </div>
+
+          <div class="home-compare-insight-grid">
+            <div class="home-compare-insight-card">
+              <span>Best value</span>
+              <strong>Vyapar</strong>
+              <p>Lower cost, faster onboarding, cleaner learning curve.</p>
+            </div>
+            <div class="home-compare-insight-card">
+              <span>Enterprise pick</span>
+              <strong>TallyPrime</strong>
+              <p>Stronger accounting depth and broader business workflows.</p>
+            </div>
+            <div class="home-compare-insight-card home-compare-insight-card--wide">
+              <span>Procurement view</span>
+              <strong>Everything your buyer asks for, in one decision surface.</strong>
+              <p>Pricing, integrations, customer support expectations, and deployment model clarity before a sales call even starts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="by-cat">
+    <div class="by-cat-shell">
+      <h2 class="by-cat-heading">Software by Category</h2>
+      <div class="cat-tabs">
+        <button class="cat-tab" type="button">Accounting Software</button>
+        <button class="cat-tab active" type="button">Antivirus Software</button>
+        <button class="cat-tab" type="button">HR Software</button>
+        <button class="cat-tab" type="button">POS Software</button>
+        <button class="cat-tab" type="button">CRM Software</button>
+      </div>
+
+      <div class="software-cards">
+        <article class="sw-box-card">
+          <div class="sw-box-media">
+            <img src="images/592_QuickHealAntiVirusPro.webp" alt="Quick Heal Antivirus Pro" />
+            <span class="sw-download">&#8595;</span>
+          </div>
+          <div class="sw-box-body">
+            <div class="sw-box-name">Quick Heal Antivirus Pro</div>
+            <div class="sw-box-vendor">Quick Heal Technologies</div>
+            <div class="sw-box-rating">
+              <span class="sw-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span>4.0</span>
+            </div>
+            <div class="sw-box-price">&#8377;299 <span class="orig">&#8377;979</span></div>
+            <div class="sw-box-save">Save 69%</div>
+          </div>
+        </article>
+
+        <article class="sw-box-card">
+          <div class="sw-box-media">
+            <span class="sw-badge">Hot</span>
+            <img src="images/4352_KasperskyAnti-Virus.webp" alt="Kaspersky Antivirus" />
+          </div>
+          <div class="sw-box-body">
+            <div class="sw-box-name">Kaspersky Antivirus</div>
+            <div class="sw-box-vendor">Kaspersky Lab</div>
+            <div class="sw-box-rating">
+              <span class="sw-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span>4.2</span>
+            </div>
+            <div class="sw-box-price">&#8377;221 <span class="orig">&#8377;480</span></div>
+            <div class="sw-box-save">Save 54%</div>
+          </div>
+        </article>
+
+        <article class="sw-box-card">
+          <div class="sw-box-media">
+            <img src="images/29674_29674_K7UltimateSecurityInfiniti.webp" alt="K7 Ultimate Security Infiniti" />
+          </div>
+          <div class="sw-box-body">
+            <div class="sw-box-name">K7 Ultimate Security Infiniti</div>
+            <div class="sw-box-vendor">K7 Computing</div>
+            <div class="sw-box-rating">
+              <span class="sw-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span>5.0</span>
+            </div>
+            <div class="sw-box-price">&#8377;2,372 <span class="orig">&#8377;13,999</span></div>
+            <div class="sw-box-save">Save 83%</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-enterprise home-enterprise--revamp">
+    <div class="container">
+      <div class="enterprise-spotlight">
+        <div class="enterprise-visual-panel">
+          <div class="enterprise-intro-card">
+            <span class="home-kicker">Introducing SafeNest Enterprise</span>
+            <h2>Enterprise buying, without enterprise slowdown.</h2>
+            <p>Designed with a sharper Webflow-style product narrative, this section turns SafeNest Enterprise into a confident offer for IT buyers, founders, and procurement leaders.</p>
+            <div class="enterprise-stat-grid">
+              <div class="enterprise-stat-card">
+                <strong>120+</strong>
+                <span>enterprise categories</span>
+              </div>
+              <div class="enterprise-stat-card">
+                <strong>38%</strong>
+                <span>faster shortlist cycles</span>
+              </div>
+              <div class="enterprise-stat-card">
+                <strong>24/7</strong>
+                <span>advisory support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="enterprise-photo-card">
+            <img src="images/pexels-fauxels-3184291.jpg" alt="SafeNest enterprise team" />
+            <div class="enterprise-photo-overlay">
+              <span>Advisory Desk</span>
+              <strong>Architecture, procurement, and vendor alignment in one lane.</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="enterprise-solution-grid">
+          <article class="enterprise-solution-card">
+            <span>Security</span>
+            <h3>Cyber Security Procurement</h3>
+            <p>Benchmark endpoint, HSM, surveillance, and compliance tooling without losing technical depth.</p>
+          </article>
+          <article class="enterprise-solution-card">
+            <span>Infrastructure</span>
+            <h3>Infrastructure Modernization</h3>
+            <p>Map legacy hardware, renewal cycles, and future cloud needs into one purchase-ready view.</p>
+          </article>
+          <article class="enterprise-solution-card">
+            <span>Cloud</span>
+            <h3>Cloud & SaaS Rollouts</h3>
+            <p>Move from evaluation to rollout with deployment clarity, vendor comparisons, and advisory support.</p>
+          </article>
+          <article class="enterprise-solution-card">
+            <span>Procurement</span>
+            <h3>Vendor Benchmarking</h3>
+            <p>Compare pricing structure, onboarding speed, SLA expectations, and integration readiness.</p>
+          </article>
+          <article class="enterprise-solution-card enterprise-solution-card--cta">
+            <div>
+              <span>SafeNest Enterprise</span>
+              <h3>Bring your full buying motion into one guided workflow.</h3>
+            </div>
+            <a href="#experts" class="showcase-btn showcase-btn--solid">Talk to Enterprise Desk</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-experts" style="background:#E8F6F3;padding:72px 0;" id="experts">
+    <div class="container">
+      <div class="home-experts-grid" style="display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;">
+
+        <!-- LEFT: Heading + description -->
+        <div class="home-experts-copy" style="padding-top:0;max-width:480px;">
+          <h2
+            style="font-size:clamp(1.7rem,3vw,2.4rem);font-weight:900;color:#1A2332;line-height:1.2;margin-bottom:18px;">
+            Anything About Software<br /><span style="color:#006B54;">Ask Experts!!</span></h2>
+          <p style="font-size:0.95rem;color:#475569;line-height:1.75;">Get bespoke advice from our senior software
+            architects. Whether you're selecting a stack or optimizing legacy systems, we're here to guide your digital
+            strategy.</p>
+        </div>
+
+        <!-- RIGHT: Form card -->
+        <div class="home-experts-card"
+          style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 8px 32px rgba(0,0,0,.08);">
+          <!-- Question section -->
+          <div style="margin-bottom:24px;">
+            <div style="font-size:0.72rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:6px;">
+              ANYTHING ABOUT SOFTWARE... ASK EXPERTS!!</div>
+            <div style="font-size:0.78rem;color:#64748B;margin-bottom:8px;">Ask your question</div>
+            <textarea placeholder="E.g. 'Best use of accounting software'" rows="3"
+              style="width:100%;border:1px solid #E2E8F0;border-radius:10px;padding:12px 14px;font-size:0.88rem;color:#1A2332;outline:none;resize:none;font-family:inherit;background:#F8FAFC;"></textarea>
+          </div>
+
+          <!-- I am looking for -->
+          <div style="margin-bottom:24px;">
+            <div style="font-size:0.72rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:12px;">I AM
+              LOOKING FOR:</div>
+            <div class="home-experts-radio-row" style="display:flex;gap:24px;align-items:center;">
+              <label style="display:flex;align-items:center;gap:8px;font-size:0.88rem;color:#1A2332;cursor:pointer;">
+                <input type="radio" name="intent" value="buy" style="accent-color:#006B54;width:16px;height:16px;" />
+                Buying Software
+              </label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:0.88rem;color:#1A2332;cursor:pointer;">
+                <input type="radio" name="intent" value="info" style="accent-color:#006B54;width:16px;height:16px;" />
+                Just Information
+              </label>
+            </div>
+          </div>
+
+          <!-- Notification section -->
+          <div style="font-size:1rem;font-weight:700;color:#1A2332;margin-bottom:16px;">Where should we send secure
+            notifications?</div>
+
+          <!-- Full Name + Email -->
+          <div class="home-experts-two-col"
+            style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:6px;">FULL
+                NAME</div>
+              <input type="text" placeholder="John Doe"
+                style="width:100%;border:1px solid #E2E8F0;border-radius:8px;padding:11px 13px;font-size:0.88rem;outline:none;font-family:inherit;background:#F8FAFC;box-sizing:border-box;" />
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:6px;">EMAIL
+                ID</div>
+              <input type="email" placeholder="name@company.com"
+                style="width:100%;border:1px solid #E2E8F0;border-radius:8px;padding:11px 13px;font-size:0.88rem;outline:none;font-family:inherit;background:#F8FAFC;box-sizing:border-box;" />
+            </div>
+          </div>
+
+          <!-- Mobile + Profession -->
+          <div class="home-experts-two-col"
+            style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;">
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:6px;">MOBILE
+                NO</div>
+              <div class="home-experts-phone-row" style="display:flex;gap:6px;">
+                <select
+                  style="border:1px solid #E2E8F0;border-radius:8px;padding:11px 8px;font-size:0.85rem;outline:none;font-family:inherit;background:#F8FAFC;width:64px;">
+                  <option>+1</option>
+                  <option>+91</option>
+                  <option>+44</option>
+                </select>
+                <input type="tel" placeholder="000-000-0000"
+                  style="flex:1;border:1px solid #E2E8F0;border-radius:8px;padding:11px 13px;font-size:0.88rem;outline:none;font-family:inherit;background:#F8FAFC;" />
+              </div>
+            </div>
+            <div>
+              <div style="font-size:0.7rem;font-weight:700;color:#94A3B8;letter-spacing:.08em;margin-bottom:6px;">SELECT
+                PROFESSION</div>
+              <select
+                style="width:100%;border:1px solid #E2E8F0;border-radius:8px;padding:11px 13px;font-size:0.88rem;outline:none;font-family:inherit;background:#F8FAFC;color:#64748B;">
+                <option>Choose your role</option>
+                <option>Business Owner</option>
+                <option>IT Manager</option>
+                <option>Developer</option>
+                <option>Student</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Privacy note + Submit -->
+          <div style="font-size:0.74rem;color:#94A3B8;margin-bottom:14px;line-height:1.6;">By submitting this form, you
+            agree to our <a href="#" style="color:#006B54;text-decoration:underline;">Privacy Policy</a> and will
+            receive a secure notification once an expert reviews your inquiry.</div>
+          <button
+            style="width:100%;background:#0A3D2E;color:#fff;font-size:0.92rem;font-weight:700;padding:15px;border:none;border-radius:10px;cursor:pointer;letter-spacing:.02em;">Submit
+            Your Question</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EXPERT GUIDANCE BANNER ═══════════════════════════════════════ -->
+  <div class="expert-banner">
+    <div class="container">
+      <div class="expert-inner">
+        <div>
+          <h3>Need Expert Guidance? We're Here to Help!</h3>
+          <p>Talk to our software experts and get personalised recommendations for your business.</p>
+        </div>
+        <div class="expert-cta-actions" style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="tel:+918080908090" class="btn btn-outline-white"> +91 8080 908090</a>
+          <a href="#experts" class="btn btn-primary">Ask an Expert</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.2rem;">
+            <svg viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#00C896" />
+              <path d="M8 22L16 10l8 12" stroke="#0A1628" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <circle cx="16" cy="10" r="2" fill="#0A1628" />
+            </svg>
+            Safe<span>Nest</span>
+          </a>
+          <p>India's most trusted software marketplace. Discover, compare, and buy the best software for your business
+            needs.</p>
+          <div class="app-badges">
+            <a href="#" class="app-badge">📱 App Store</a>
+            <a href="#" class="app-badge">▶ Google Play</a>
+          </div>
+          <div class="footer-socials" style="margin-top:16px;">
+            <a href="#">in</a>
+            <a href="#">𝕏</a>
+            <a href="#">f</a>
+            <a href="#">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All Software</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Deals &amp; Offers</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Free Software</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Buyer's Guide</a></li>
+            <li><a href="#">Software Reviews</a></li>
+            <li><a href="#">Comparisons</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">API Docs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p style="color:rgba(255,255,255,.4);">© 2025 SafeNest Pvt. Ltd. All rights reserved.</p>
+        <p style="color:rgba(255,255,255,.4);">Made with in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+(function () {
+  var STYLE_ID = "page-loader-style";
+  var OVERLAY_ID = "page-loader-overlay";
+  var NAV_STYLE_ID = "page-loader-nav-style";
+  var NAV_DELAY_MS = 720;
+  var isNavigating = false;
+
+  function ensureStyles() {
+    if (document.getElementById(STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent = [
+      ".page-loader-active { overflow: hidden; }",
+      ".page-loader-overlay {",
+      "  position: fixed;",
+      "  inset: 0;",
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  background: rgba(4, 7, 12, 0.94);",
+      "  opacity: 0;",
+      "  visibility: hidden;",
+      "  pointer-events: none;",
+      "  transition: opacity 0.25s ease, visibility 0.25s ease;",
+      "  z-index: 99999;",
+      "}",
+      ".page-loader-overlay.is-visible {",
+      "  opacity: 1;",
+      "  visibility: visible;",
+      "  pointer-events: auto;",
+      "}",
+      ".page-loader-overlay .loader-wrapper {",
+      "  position: relative;",
+      "  display: flex;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  gap: 2px;",
+      "  min-height: 120px;",
+      "  margin: 0;",
+      "  font-family: 'Poppins', 'Inter', sans-serif;",
+      "  font-size: 1.6em;",
+      "  font-weight: 600;",
+      "  user-select: none;",
+      "  color: #ffffff;",
+      "  transform: scale(1.5);",
+      "}",
+      ".page-loader-overlay .loader {",
+      "  position: absolute;",
+      "  inset: 0;",
+      "  z-index: 1;",
+      "  background-color: transparent;",
+      "  -webkit-mask: repeating-linear-gradient(90deg, transparent 0, transparent 6px, black 7px, black 8px);",
+      "  mask: repeating-linear-gradient(90deg, transparent 0, transparent 6px, black 7px, black 8px);",
+      "}",
+      ".page-loader-overlay .loader::after {",
+      "  content: '';",
+      "  position: absolute;",
+      "  inset: 0;",
+      "  background-image:",
+      "    radial-gradient(circle at 50% 50%, rgb(200, 255, 0) 0%, transparent 50%),",
+      "    radial-gradient(circle at 45% 45%, #f00 0%, transparent 45%),",
+      "    radial-gradient(circle at 55% 55%, #0ff 0%, transparent 45%),",
+      "    radial-gradient(circle at 45% 55%, #0f0 0%, transparent 45%),",
+      "    radial-gradient(circle at 55% 45%, #00f 0%, transparent 45%);",
+      "  -webkit-mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);",
+      "  mask: radial-gradient(circle at 50% 50%, transparent 0%, transparent 10%, black 25%);",
+      "  animation: page-loader-transform 2s infinite alternate, page-loader-opacity 4s infinite;",
+      "  animation-timing-function: cubic-bezier(0.6, 0.8, 0.5, 1);",
+      "}",
+      ".page-loader-overlay .loader-letter {",
+      "  display: inline-block;",
+      "  opacity: 0;",
+      "  animation: page-loader-letter 4s infinite linear;",
+      "  z-index: 2;",
+      "}",
+      ".page-loader-overlay .loader-letter:nth-child(1) { animation-delay: 0.10s; }",
+      ".page-loader-overlay .loader-letter:nth-child(2) { animation-delay: 0.205s; }",
+      ".page-loader-overlay .loader-letter:nth-child(3) { animation-delay: 0.31s; }",
+      ".page-loader-overlay .loader-letter:nth-child(4) { animation-delay: 0.415s; }",
+      ".page-loader-overlay .loader-letter:nth-child(5) { animation-delay: 0.521s; }",
+      ".page-loader-overlay .loader-letter:nth-child(6) { animation-delay: 0.626s; }",
+      ".page-loader-overlay .loader-letter:nth-child(7) { animation-delay: 0.731s; }",
+      "@keyframes page-loader-transform {",
+      "  0% { transform: translateX(-55%); }",
+      "  100% { transform: translateX(55%); }",
+      "}",
+      "@keyframes page-loader-opacity {",
+      "  0%, 100% { opacity: 0; }",
+      "  15% { opacity: 1; }",
+      "  65% { opacity: 0; }",
+      "}",
+      "@keyframes page-loader-letter {",
+      "  0% { opacity: 0; }",
+      "  5% { opacity: 1; text-shadow: 0 0 4px #000000; transform: scale(1.1) translateY(-2px); }",
+      "  20% { opacity: 0.2; }",
+      "  100% { opacity: 0; }",
+      "}",
+      "@media (max-width: 640px) {",
+      "  .page-loader-overlay .loader-wrapper { transform: scale(1.05); font-size: 1.35em; }",
+      "}"
+    ].join("\n");
+
+    document.head.appendChild(style);
+  }
+
+  function ensureOverlay() {
+    var overlay = document.getElementById(OVERLAY_ID);
+    if (overlay) {
+      return overlay;
+    }
+
+    overlay = document.createElement("div");
+    overlay.id = OVERLAY_ID;
+    overlay.className = "page-loader-overlay";
+    overlay.setAttribute("aria-hidden", "true");
+    overlay.innerHTML = [
+      '<div class="loader-wrapper">',
+      '  <span class="loader-letter">L</span>',
+      '  <span class="loader-letter">O</span>',
+      '  <span class="loader-letter">A</span>',
+      '  <span class="loader-letter">D</span>',
+      '  <span class="loader-letter">I</span>',
+      '  <span class="loader-letter">N</span>',
+      '  <span class="loader-letter">G</span>',
+      '  <div class="loader"></div>',
+      '</div>'
+    ].join("\n");
+
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+
+  function ensureNavStyles() {
+    if (document.getElementById(NAV_STYLE_ID)) {
+      return;
+    }
+
+    var style = document.createElement("style");
+    style.id = NAV_STYLE_ID;
+    style.textContent = [
+      ".cmp-mobile-menu-open { overflow: hidden; }",
+      ".cmp-nav-toggle {",
+      "  display: none;",
+      "  width: 46px;",
+      "  height: 46px;",
+      "  align-items: center;",
+      "  justify-content: center;",
+      "  flex-direction: column;",
+      "  gap: 5px;",
+      "  border: 1px solid rgba(255,255,255,0.14);",
+      "  border-radius: 14px;",
+      "  background: #0d1825;",
+      "  color: #ffffff;",
+      "  box-shadow: 0 10px 24px rgba(0,0,0,0.18);",
+      "  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;",
+      "  flex: 0 0 auto;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] {",
+      "  background: #000000;",
+      "  border-color: rgba(255,255,255,0.24);",
+      "  box-shadow: 0 12px 28px rgba(0,0,0,0.28);",
+      "}",
+      ".cmp-nav-toggle span {",
+      "  display: block;",
+      "  width: 18px;",
+      "  height: 2px;",
+      "  background: currentColor;",
+      "  border-radius: 999px;",
+      "  transition: transform 0.2s ease, opacity 0.2s ease;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(1) {",
+      "  transform: translateY(7px) rotate(45deg);",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(2) {",
+      "  opacity: 0;",
+      "}",
+      ".cmp-nav-toggle[aria-expanded='true'] span:nth-child(3) {",
+      "  transform: translateY(-7px) rotate(-45deg);",
+      "}",
+      "@media (max-width: 900px) {",
+      "  .cmp-nav {",
+      "    padding: 14px 16px !important;",
+      "    min-height: auto !important;",
+      "    align-items: center !important;",
+      "    gap: 12px !important;",
+      "  }",
+      "  .cmp-nav-shell {",
+      "    width: 100% !important;",
+      "    min-height: auto !important;",
+      "    padding: 0 !important;",
+      "  }",
+      "  .cmp-nav,",
+      "  .cmp-nav-shell {",
+      "    display: flex !important;",
+      "    flex-wrap: wrap !important;",
+      "    align-items: center !important;",
+      "    justify-content: space-between !important;",
+      "    row-gap: 12px !important;",
+      "  }",
+      "  .cmp-nav-logo {",
+      "    margin-right: auto !important;",
+      "  }",
+      "  .cmp-nav-toggle {",
+      "    display: inline-flex !important;",
+      "  }",
+      "  .cmp-nav .cmp-nav-links,",
+      "  .cmp-nav .cmp-nav-actions {",
+      "    display: none !important;",
+      "    width: 100% !important;",
+      "    flex: 0 0 100% !important;",
+      "    margin-left: 0 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open,",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-shell {",
+      "    background: #000000 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open {",
+      "    box-shadow: 0 18px 42px rgba(0,0,0,0.32) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-shell {",
+      "    align-items: stretch !important;",
+      "    row-gap: 10px !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-links {",
+      "    display: flex !important;",
+      "    flex-direction: column !important;",
+      "    align-items: stretch !important;",
+      "    gap: 8px !important;",
+      "    padding-top: 12px !important;",
+      "    background: #000000 !important;",
+      "    border-top: 1px solid rgba(255,255,255,0.08) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-links a {",
+      "    display: block !important;",
+      "    width: 100% !important;",
+      "    padding: 12px 14px !important;",
+      "    border-radius: 12px !important;",
+      "    color: #ffffff !important;",
+      "    background: rgba(255,255,255,0.06) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-actions {",
+      "    display: flex !important;",
+      "    flex-direction: column !important;",
+      "    align-items: stretch !important;",
+      "    gap: 12px !important;",
+      "    padding-top: 12px !important;",
+      "    padding-bottom: 4px !important;",
+      "    background: #000000 !important;",
+      "    border-top: 1px solid rgba(255,255,255,0.08) !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search {",
+      "    display: flex !important;",
+      "    width: 100% !important;",
+      "    max-width: none !important;",
+      "    min-width: 0 !important;",
+      "    height: 48px !important;",
+      "    background: #111827 !important;",
+      "    border: 1px solid rgba(255,255,255,0.08) !important;",
+      "    box-shadow: none !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search input {",
+      "    color: #ffffff !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-search input::placeholder {",
+      "    color: #94a3b8 !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-actions > a {",
+      "    margin-right: 0 !important;",
+      "    align-self: flex-start !important;",
+      "  }",
+      "  .cmp-nav.cmp-nav-open .cmp-nav-signup {",
+      "    width: 100% !important;",
+      "    min-width: 0 !important;",
+      "  }",
+      "}",
+      "@media (max-width: 560px) {",
+      "  .cmp-nav {",
+      "    padding: 12px 14px !important;",
+      "  }",
+      "  .cmp-nav-logo img {",
+      "    height: 34px !important;",
+      "  }",
+      "}"
+    ].join("\n");
+
+    document.head.appendChild(style);
+  }
+
+  function setNavOpenState(nav, toggle, isOpen) {
+    nav.classList.toggle("cmp-nav-open", isOpen);
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    document.body.classList.toggle(
+      "cmp-mobile-menu-open",
+      document.querySelector(".cmp-nav.cmp-nav-open") !== null
+    );
+  }
+
+  function setupMobileNav() {
+    ensureNavStyles();
+
+    Array.prototype.forEach.call(document.querySelectorAll(".cmp-nav"), function (nav, index) {
+      if (nav.dataset.mobileNavReady === "true") {
+        return;
+      }
+
+      var navShell = nav.querySelector(".cmp-nav-shell");
+      var toggleHost = navShell || nav;
+      var links = toggleHost.querySelector(".cmp-nav-links");
+      var actions = toggleHost.querySelector(".cmp-nav-actions");
+
+      if (!links || !actions) {
+        return;
+      }
+
+      var toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "cmp-nav-toggle";
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation menu");
+      toggle.setAttribute("aria-controls", "cmp-mobile-nav-" + index);
+      toggle.innerHTML = "<span></span><span></span><span></span>";
+
+      links.id = "cmp-mobile-nav-" + index;
+      toggleHost.insertBefore(toggle, links);
+
+      toggle.addEventListener("click", function () {
+        setNavOpenState(nav, toggle, !nav.classList.contains("cmp-nav-open"));
+      });
+
+      links.addEventListener("click", function (event) {
+        if (event.target.closest("a[href]")) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      actions.addEventListener("click", function (event) {
+        if (event.target.closest("a[href]")) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!nav.contains(event.target)) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 900) {
+          setNavOpenState(nav, toggle, false);
+        }
+      });
+
+      nav.dataset.mobileNavReady = "true";
+    });
+  }
+
+  function ensureLoader() {
+    ensureStyles();
+    return ensureOverlay();
+  }
+
+  function resetLoader() {
+    var overlay = document.getElementById(OVERLAY_ID);
+    isNavigating = false;
+    document.body.classList.remove("page-loader-active");
+
+    if (overlay) {
+      overlay.classList.remove("is-visible");
+    }
+  }
+
+  function showLoader(nextHref) {
+    var overlay = ensureLoader();
+
+    if (isNavigating) {
+      return;
+    }
+
+    isNavigating = true;
+    document.body.classList.add("page-loader-active");
+    overlay.classList.add("is-visible");
+
+    if (nextHref) {
+      window.setTimeout(function () {
+        window.location.href = nextHref;
+      }, NAV_DELAY_MS);
+    }
+  }
+
+  function isModifiedClick(event) {
+    return event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+  }
+
+  function isSameDocument(url) {
+    return url.pathname === window.location.pathname && url.search === window.location.search;
+  }
+
+  function resolveInternalHref(rawHref) {
+    if (!rawHref) {
+      return null;
+    }
+
+    var trimmedHref = rawHref.trim();
+    if (!trimmedHref || trimmedHref === "#" || trimmedHref.indexOf("javascript:") === 0) {
+      return null;
+    }
+
+    if (trimmedHref.indexOf("mailto:") === 0 || trimmedHref.indexOf("tel:") === 0) {
+      return null;
+    }
+
+    var url = new URL(trimmedHref, window.location.href);
+    if (url.origin !== window.location.origin) {
+      return null;
+    }
+
+    return url;
+  }
+
+  function handleInlineLocationClick(event) {
+    var trigger = event.target.closest("[onclick*='location.href'], [onclick*='window.location.href']");
+    if (!trigger || trigger.closest("a[href]")) {
+      return false;
+    }
+
+    var onclickValue = trigger.getAttribute("onclick");
+    var match = onclickValue && onclickValue.match(/(?:window\.)?location\.href\s*=\s*['"]([^'"]+)['"]/);
+    if (!match) {
+      return false;
+    }
+
+    var url = resolveInternalHref(match[1]);
+    if (!url || isSameDocument(url)) {
+      return false;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    if (typeof event.stopImmediatePropagation === "function") {
+      event.stopImmediatePropagation();
+    }
+
+    showLoader(url.href);
+    return true;
+  }
+
+  function handleAnchorClick(event) {
+    var anchor = event.target.closest("a[href]");
+    if (!anchor) {
+      return;
+    }
+
+    if (anchor.target && anchor.target !== "_self") {
+      return;
+    }
+
+    if (anchor.hasAttribute("download") || anchor.dataset.noLoader !== undefined) {
+      return;
+    }
+
+    if (isModifiedClick(event)) {
+      return;
+    }
+
+    var url = resolveInternalHref(anchor.getAttribute("href"));
+    if (!url || isSameDocument(url)) {
+      return;
+    }
+
+    event.preventDefault();
+    showLoader(url.href);
+  }
+
+  function bindEvents() {
+    document.addEventListener(
+      "click",
+      function (event) {
+        if (handleInlineLocationClick(event)) {
+          return;
+        }
+
+        handleAnchorClick(event);
+      },
+      true
+    );
+
+    window.addEventListener("pageshow", resetLoader);
+    window.addEventListener("load", resetLoader);
+  }
+
+  function init() {
+    ensureLoader();
+    setupMobileNav();
+    resetLoader();
+    bindEvents();
+    window.showPageLoader = showLoader;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+</body>
+
+</html>
+
