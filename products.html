@@ -512,6 +512,7 @@
   </footer>
 
 <script>
+<<<<<<< HEAD
 (function () {
   var STYLE_ID = "page-loader-style";
   var OVERLAY_ID = "page-loader-overlay";
@@ -1028,6 +1029,209 @@
   }
 })();
 
+=======
+  (() => {
+    const STYLE_ID = "page-loader-style";
+    const OVERLAY_ID = "page-loader-overlay";
+    const NAV_STYLE_ID = "page-loader-nav-style";
+    const NAV_DELAY_MS = 720;
+    let isNavigating = false;
+
+    const addStyle = (id, css) => {
+      if (document.getElementById(id)) return;
+      const style = document.createElement("style");
+      style.id = id;
+      style.textContent = css;
+      document.head.appendChild(style);
+    };
+
+    const ensureStyles = () => {
+      addStyle(
+        STYLE_ID,
+        `.page-loader-active{overflow:hidden}.page-loader-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(4,7,12,.94);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility .25s ease;z-index:99999}.page-loader-overlay.is-visible{opacity:1;visibility:visible;pointer-events:auto}.page-loader-overlay .loader-wrapper{position:relative;display:flex;align-items:center;justify-content:center;gap:2px;min-height:120px;margin:0;font-family:'Poppins','Inter',sans-serif;font-size:1.6em;font-weight:600;user-select:none;color:#fff;transform:scale(1.5)}.page-loader-overlay .loader{position:absolute;inset:0;z-index:1;background-color:transparent;-webkit-mask:repeating-linear-gradient(90deg,transparent 0,transparent 6px,#000 7px,#000 8px);mask:repeating-linear-gradient(90deg,transparent 0,transparent 6px,#000 7px,#000 8px)}.page-loader-overlay .loader::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 50% 50%,rgb(200,255,0) 0,transparent 50%),radial-gradient(circle at 45% 45%,#f00 0,transparent 45%),radial-gradient(circle at 55% 55%,#0ff 0,transparent 45%),radial-gradient(circle at 45% 55%,#0f0 0,transparent 45%),radial-gradient(circle at 55% 45%,#00f 0,transparent 45%);-webkit-mask:radial-gradient(circle at 50% 50%,transparent 0,transparent 10%,#000 25%);mask:radial-gradient(circle at 50% 50%,transparent 0,transparent 10%,#000 25%);animation:page-loader-transform 2s infinite alternate,page-loader-opacity 4s infinite;animation-timing-function:cubic-bezier(.6,.8,.5,1)}.page-loader-overlay .loader-letter{display:inline-block;opacity:0;animation:page-loader-letter 4s infinite linear;z-index:2}.page-loader-overlay .loader-letter:nth-child(1){animation-delay:.10s}.page-loader-overlay .loader-letter:nth-child(2){animation-delay:.205s}.page-loader-overlay .loader-letter:nth-child(3){animation-delay:.31s}.page-loader-overlay .loader-letter:nth-child(4){animation-delay:.415s}.page-loader-overlay .loader-letter:nth-child(5){animation-delay:.521s}.page-loader-overlay .loader-letter:nth-child(6){animation-delay:.626s}.page-loader-overlay .loader-letter:nth-child(7){animation-delay:.731s}@keyframes page-loader-transform{0%{transform:translateX(-55%)}100%{transform:translateX(55%)}}@keyframes page-loader-opacity{0%,100%{opacity:0}15%{opacity:1}65%{opacity:0}}@keyframes page-loader-letter{0%{opacity:0}5%{opacity:1;text-shadow:0 0 4px #000;transform:scale(1.1) translateY(-2px)}20%{opacity:.2}100%{opacity:0}}@media (max-width:640px){.page-loader-overlay .loader-wrapper{transform:scale(1.05);font-size:1.35em}}`
+      );
+    };
+
+    const ensureOverlay = () => {
+      let overlay = document.getElementById(OVERLAY_ID);
+      if (overlay) return overlay;
+
+      overlay = document.createElement("div");
+      overlay.id = OVERLAY_ID;
+      overlay.className = "page-loader-overlay";
+      overlay.setAttribute("aria-hidden", "true");
+      overlay.innerHTML =
+        '<div class="loader-wrapper"><span class="loader-letter">L</span><span class="loader-letter">O</span><span class="loader-letter">A</span><span class="loader-letter">D</span><span class="loader-letter">I</span><span class="loader-letter">N</span><span class="loader-letter">G</span><div class="loader"></div></div>';
+      document.body.appendChild(overlay);
+      return overlay;
+    };
+
+    const ensureNavStyles = () => {
+      addStyle(
+        NAV_STYLE_ID,
+        `.cmp-nav-toggle{display:none;width:46px;height:46px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:#0d1825;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.18);flex:0 0 auto}.cmp-nav-toggle span{display:block;width:18px;height:2px;background:currentColor;border-radius:999px;transition:transform .2s ease,opacity .2s ease}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(2){opacity:0}.cmp-nav-toggle[aria-expanded='true'] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media (max-width:900px){.cmp-nav{padding:14px 16px !important;min-height:auto !important;align-items:center !important;gap:12px !important}.cmp-nav-shell{width:100% !important;min-height:auto !important;padding:0 !important}.cmp-nav,.cmp-nav-shell{display:flex !important;flex-wrap:wrap !important;align-items:center !important;justify-content:space-between !important;row-gap:12px !important}.cmp-nav-logo{margin-right:auto !important}.cmp-nav-toggle{display:inline-flex !important}.cmp-nav .cmp-nav-links,.cmp-nav .cmp-nav-actions{display:none !important;width:100% !important;flex:0 0 100% !important;margin-left:0 !important}.cmp-nav.cmp-nav-open,.cmp-nav.cmp-nav-open .cmp-nav-shell,.cmp-nav.cmp-nav-open .cmp-nav-links,.cmp-nav.cmp-nav-open .cmp-nav-actions{background:#000 !important}.cmp-nav.cmp-nav-open .cmp-nav-links{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:8px !important;padding-top:8px !important}.cmp-nav.cmp-nav-open .cmp-nav-links a{display:block !important;width:100% !important;padding:12px 14px !important;border-radius:12px !important;background:rgba(255,255,255,.04) !important}.cmp-nav.cmp-nav-open .cmp-nav-actions{display:flex !important;flex-direction:column !important;align-items:stretch !important;gap:12px !important;padding-bottom:4px !important}.cmp-nav.cmp-nav-open .cmp-nav-search{display:flex !important;width:100% !important;max-width:none !important;min-width:0 !important;height:48px !important}.cmp-nav.cmp-nav-open .cmp-nav-actions>a{margin-right:0 !important;align-self:flex-start !important}.cmp-nav.cmp-nav-open .cmp-nav-signup{width:100% !important;min-width:0 !important}}@media (max-width:560px){.cmp-nav{padding:12px 14px !important}.cmp-nav-logo img{height:34px !important}}`
+      );
+    };
+
+    const setNavOpenState = (nav, toggle, isOpen) => {
+      nav.classList.toggle("cmp-nav-open", isOpen);
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      toggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    };
+
+    const setupMobileNav = () => {
+      ensureNavStyles();
+
+      document.querySelectorAll(".cmp-nav").forEach((nav, index) => {
+        if (nav.dataset.mobileNavReady === "true") return;
+
+        const navShell = nav.querySelector(".cmp-nav-shell");
+        const toggleHost = navShell || nav;
+        const links = toggleHost.querySelector(".cmp-nav-links");
+        const actions = toggleHost.querySelector(".cmp-nav-actions");
+        if (!links || !actions) return;
+
+        const toggle = document.createElement("button");
+        toggle.type = "button";
+        toggle.className = "cmp-nav-toggle";
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Open navigation menu");
+        toggle.setAttribute("aria-controls", `cmp-mobile-nav-${index}`);
+        toggle.innerHTML = "<span></span><span></span><span></span>";
+
+        links.id = `cmp-mobile-nav-${index}`;
+        toggleHost.insertBefore(toggle, links);
+
+        toggle.addEventListener("click", () => {
+          setNavOpenState(nav, toggle, !nav.classList.contains("cmp-nav-open"));
+        });
+
+        const closeOnLink = (event) => {
+          if (event.target.closest("a[href]")) setNavOpenState(nav, toggle, false);
+        };
+
+        links.addEventListener("click", closeOnLink);
+        actions.addEventListener("click", closeOnLink);
+
+        document.addEventListener("click", (event) => {
+          if (!nav.contains(event.target)) setNavOpenState(nav, toggle, false);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") setNavOpenState(nav, toggle, false);
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 900) setNavOpenState(nav, toggle, false);
+        });
+
+        nav.dataset.mobileNavReady = "true";
+      });
+    };
+
+    const ensureLoader = () => {
+      ensureStyles();
+      return ensureOverlay();
+    };
+
+    const resetLoader = () => {
+      const overlay = document.getElementById(OVERLAY_ID);
+      isNavigating = false;
+      document.body.classList.remove("page-loader-active");
+      if (overlay) overlay.classList.remove("is-visible");
+    };
+
+    const showLoader = (nextHref) => {
+      const overlay = ensureLoader();
+      if (isNavigating) return;
+
+      isNavigating = true;
+      document.body.classList.add("page-loader-active");
+      overlay.classList.add("is-visible");
+
+      if (nextHref) {
+        window.setTimeout(() => {
+          window.location.href = nextHref;
+        }, NAV_DELAY_MS);
+      }
+    };
+
+    const isModifiedClick = (event) =>
+      event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;
+
+    const isSameDocument = (url) =>
+      url.pathname === window.location.pathname && url.search === window.location.search;
+
+    const resolveInternalHref = (rawHref) => {
+      if (!rawHref) return null;
+      const trimmedHref = rawHref.trim();
+      if (!trimmedHref || trimmedHref === "#" || trimmedHref.startsWith("javascript:")) return null;
+      if (trimmedHref.startsWith("mailto:") || trimmedHref.startsWith("tel:")) return null;
+
+      const url = new URL(trimmedHref, window.location.href);
+      return url.origin === window.location.origin ? url : null;
+    };
+
+    const handleInlineLocationClick = (event) => {
+      const trigger = event.target.closest("[onclick*='location.href'], [onclick*='window.location.href']");
+      if (!trigger || trigger.closest("a[href]")) return false;
+
+      const onclickValue = trigger.getAttribute("onclick");
+      const match = onclickValue && onclickValue.match(/(?:window\.)?location\.href\s*=\s*['"]([^'"]+)['"]/);
+      if (!match) return false;
+
+      const url = resolveInternalHref(match[1]);
+      if (!url || isSameDocument(url)) return false;
+
+      event.preventDefault();
+      event.stopPropagation();
+      if (typeof event.stopImmediatePropagation === "function") event.stopImmediatePropagation();
+      showLoader(url.href);
+      return true;
+    };
+
+    const handleAnchorClick = (event) => {
+      const anchor = event.target.closest("a[href]");
+      if (!anchor) return;
+      if (anchor.target && anchor.target !== "_self") return;
+      if (anchor.hasAttribute("download") || anchor.dataset.noLoader !== undefined) return;
+      if (isModifiedClick(event)) return;
+
+      const url = resolveInternalHref(anchor.getAttribute("href"));
+      if (!url || isSameDocument(url)) return;
+
+      event.preventDefault();
+      showLoader(url.href);
+    };
+
+    const bindEvents = () => {
+      document.addEventListener(
+        "click",
+        (event) => {
+          if (handleInlineLocationClick(event)) return;
+          handleAnchorClick(event);
+        },
+        true
+      );
+      window.addEventListener("pageshow", resetLoader);
+      window.addEventListener("load", resetLoader);
+    };
+
+    const init = () => {
+      ensureLoader();
+      setupMobileNav();
+      resetLoader();
+      bindEvents();
+      window.showPageLoader = showLoader;
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+>>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
 </script>
 </body>
 </html>
@@ -1038,4 +1242,7 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 66d5908138eec44a9b739640c745df0f243f732b
